@@ -1,10 +1,11 @@
 import './Navbar.css'
+import Image from "../../assets/Madhushree.svg";
 
 function Navbar() {
   return (
     <nav>
       <div className="nav-left">
-        <h1>Madhushree</h1>
+        <img src={Image} alt="My name" />
       </div>
 
       <div className="nav-middle">

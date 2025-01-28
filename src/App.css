@@ -5,3 +5,10 @@ html {
   text-align: center;
   justify-content: center;
 }
+
+.App{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+

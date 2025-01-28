@@ -5,11 +5,11 @@ import Navbar from './Components/Navbar/Navbar'
 
 function App() {
   return (
-    <>
-      <Navbar></Navbar>
-      <Cards></Cards>
-      <Footer></Footer>
-    </>
+    <div className='App'>
+      <Navbar />
+      <Cards />
+      <Footer />
+    </div>
   )
 }
 
