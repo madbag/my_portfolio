@@ -3,8 +3,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 40px 50px;
-    
+    margin: 60px 40px;
 }
 
 .nav-left{
@@ -17,7 +16,7 @@ nav{
 }
 
 .nav-middle{
-    background: rgba(0,0,0,0.07) ;
+    background: rgba(0,0,0,0.05) ;
     padding: 10px 10px;
     border-radius: 50px;
     display: flex;
@@ -32,7 +31,3 @@ p {
     cursor: pointer;
 }
 
-.nav-right a{
-    text-decoration: none;
-    color: black;
-}

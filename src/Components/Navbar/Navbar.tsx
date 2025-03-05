@@ -1,5 +1,6 @@
 import './Navbar.css'
-import Image from "../../assets/Madhushree.svg";
+import Image from "../../assets/Madhushree (1).svg";
+import DarkMode from './DarkMode/DarkMode';
 
 function Navbar() {
   return (
@@ -13,11 +14,11 @@ function Navbar() {
         <p>Projects</p>
         <p>Resume</p>
         <p>About</p>
-        <p>Blog</p>
+        <p>Contact</p>
       </div>
 
       <div className="nav-right">
-        <p><a href=''>Contact</a></p>
+        <DarkMode/>
       </div>
     </nav>
   )
