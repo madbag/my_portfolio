@@ -1,5 +1,6 @@
 .main {
-    background-color:White;
+    background-color: var(--secondary-text-color);
     border-radius: 10px;
     padding: 10px;
 }
+
