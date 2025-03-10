@@ -10,19 +10,27 @@ import Blog from "./Blog/Blog"
 import TechStack from "./TechStack/TechStack"
 import Pro5 from "./Pro5/Pro5"
 
+
 function Cards() {
+ 
   return (
     <div className="cards">
-        <About />
-        <Spotify/>
-        <Location/>
-        <Pro1/>
-        <Pro2/>
-        <Pro3/>
-        <Pro/>
-        <Pro5/>
-        <Blog/>
-        <TechStack/>
+      <div className="left">
+       <About />
+       <Pro1 />
+       <Pro2 />
+       <div className="misc">
+       <Spotify />
+       <Blog />
+       <Location />
+       </div>
+      </div>
+      <div className="right">
+       <TechStack />
+       <Pro3 />
+       <Pro />
+       <Pro5 />
+      </div>
     </div>
   )
 }

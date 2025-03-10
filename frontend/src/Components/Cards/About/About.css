@@ -1,6 +1,9 @@
 .main {
     background-color: var(--secondary-text-color);
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 10px;
 }
 
+.secondary-div{
+    width: 500px;
+}

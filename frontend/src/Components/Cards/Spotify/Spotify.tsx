@@ -2,7 +2,8 @@ import React from 'react'
 
 function Spotify() {
   return (
-    <div className='main'>Spotify</div>
+    <div className='main'>
+      My Spotify Playlist</div>
   )
 }
 
