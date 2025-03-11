@@ -1,4 +1,4 @@
-import Memoji from "../../../assets/Memoji1.svg"
+import Memoji from "../../../../assets/Memoji1.svg"
 import "./About.css"
 
 function About() {

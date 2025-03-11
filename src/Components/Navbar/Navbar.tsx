@@ -1,5 +1,5 @@
 import './Navbar.css'
-import Image from "../../assets/Madhushree (1).svg";
+import Image from "../../../assets/Madhushree.svg";
 import DarkMode from './DarkMode/DarkMode';
 
 function Navbar() {
