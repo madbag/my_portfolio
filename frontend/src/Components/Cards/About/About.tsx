@@ -4,9 +4,13 @@ import "./About.css"
 function About() {
   return (
     <div className="main">
-      <div className="secondary-div">
+      <div className="top-div">
       <img src={Memoji} alt="memoji-face"></img>
-      <p>Hi!I am<h2>Madhushree</h2> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <p>Location: Berlin 🇩🇪</p>
+      </div>
+
+      <div className="bottom-div">
+      <p>Hi, I'm <span>Madhushree</span>, a Full Stack Developer who loves building web and mobile applications. I specialize in creating user-friendly designs and efficient back-end systems. Check out my work and let’s connect!</p>
       </div>
     </div>
   )

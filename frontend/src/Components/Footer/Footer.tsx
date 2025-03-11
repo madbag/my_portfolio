@@ -4,13 +4,13 @@ function Footer() {
   return (
     <div className='main-footer'>
       <div className="footer-top">
-      <p>Madhushree's Portfolio</p>
+      <p>Thank you Nev Flynn for the idea 🌸</p>
       </div>
 
       <div className="footer-bottom">
-        <div><a href="https://www.linkedin.com/in/madhushreeb/">LinkedIn </a></div>
-        <div><a href="https://github.com/madbag">GitHub </a></div>
-        <div><a href="">Email </a></div>
+        <a href="https://www.linkedin.com/in/madhushreeb/">LinkedIn </a>
+        <a href="https://github.com/madbag">GitHub </a>
+        <a href="">Email </a>
       </div>
 
     </div>

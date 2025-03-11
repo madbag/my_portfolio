@@ -1,14 +1,14 @@
 import React from "react";
 
-function Pro3() {
+function Pro6() {
   return (
     <div className="main">
       <img></img>
-      <h3>Vent Out</h3>
+      <h3>Huggers</h3>
       <button>Repository</button>
-      <button>Live</button>
+      <button> Website </button>
     </div>
   );
 }
 
-export default Pro3;
+export default Pro6;

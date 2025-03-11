@@ -2,7 +2,7 @@
 
 function Location() {
   return (
-    <div className="main">Location</div>
+    <div className="main">Goodreads </div>
   )
 }
 
