@@ -11,37 +11,71 @@ import Pro6 from "./Pro6/Pro6";
 import Pro7 from "./Pro7/Pro7";
 import TechStack from "./TechStack/TechStack";
 import "./Cards.css";
+import { motion } from "framer-motion";
 
-function Cards() {
+type Section = "Home" | "Projects" | "About" | "Resume" | "Contact";
+
+interface CardsProps {
+  activeSection: Section;
+}
+
+const Cards: React.FC<CardsProps> = ({ activeSection }) => {
   return (
-    <div className="cards">
+    <div
+      className={`cards ${
+        activeSection === "Projects" ? "projects-active" : ""
+      } ${activeSection === "About" ? "about-active" : ""}`}
+    >
       <div className="left">
         <About />
 
-        <div className="left-top">
-          <Pro1 />
-          <Pro2 />
-          <Pro3 />
-          <Pro />
-        </div>
-
-        <div className="left-bottom">
-          <Spotify />
-          <div className="hobby">
+        {activeSection === "Projects" ? (
+          <motion.div layout className="projects-container">
+            <Pro1 />
+            <Pro2 />
+            <Pro3 />
+            <Pro />
+            <Pro5 />
+            <Pro6 />
+            <Pro7 />
+          </motion.div>
+        ) : activeSection === "About" ? (
+          <motion.div className="about-container">
+            <Spotify />
             <Blog />
             <Location />
-          </div>
-        </div>
+            <TechStack />
+          </motion.div>
+        ) : (
+          <>
+            <div className="left-top">
+              <Pro1 />
+              <Pro2 />
+              <Pro3 />
+              <Pro />
+            </div>
+
+            <div className="left-bottom">
+              <Spotify />
+              <div className="hobby">
+                <Blog />
+                <Location />
+              </div>
+            </div>
+          </>
+        )}
       </div>
 
-      <div className="right">
-        <Pro5 />
-        <Pro6 />
-        <Pro7 />
-        <TechStack />
-      </div>
+      {activeSection !== "Projects" && activeSection !== "About" && (
+        <motion.div layout className="right">
+          <Pro5 />
+          <Pro6 />
+          <Pro7 />
+          <TechStack />
+        </motion.div>
+      )}
     </div>
   );
-}
+};
 
 export default Cards;

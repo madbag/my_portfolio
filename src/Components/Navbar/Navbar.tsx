@@ -1,8 +1,12 @@
-import './Navbar.css'
+import "./Navbar.css";
 import Image from "../../../assets/Madhushree.svg";
-import DarkMode from './DarkMode/DarkMode';
+import DarkMode from "./DarkMode/DarkMode";
 
-function Navbar() {
+interface NavbarProps {
+  setActiveSection: (section: string) => void;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ setActiveSection }) => {
   return (
     <nav>
       <div className="nav-left">
@@ -10,18 +14,18 @@ function Navbar() {
       </div>
 
       <div className="nav-middle">
-        <p>Home</p>
-        <p>Projects</p>
-        <p>Resume</p>
-        <p>About</p>
-        <p>Contact</p>
+        <p onClick={() => setActiveSection("Home")}>Home</p>
+        <p onClick={() => setActiveSection("Projects")}>Projects</p>
+        <p onClick={() => setActiveSection("Resume")}>Resume</p>
+        <p onClick={() => setActiveSection("About")}>About</p>
+        <p onClick={() => setActiveSection("Contact")}>Contact</p>
       </div>
 
       <div className="nav-right">
-        <DarkMode/>
+        <DarkMode />
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
