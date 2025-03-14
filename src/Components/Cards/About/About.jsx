@@ -10,7 +10,7 @@ function About() {
       </div>
 
       <div className="bottom-div">
-      <p>Hi, I'm <span>Madhushree</span>, a Full Stack Developer who loves building web and mobile applications. I specialize in creating user-friendly designs and efficient back-end systems. Check out my work and let’s connect!</p>
+      <p>Hi, I'm Madhushree, a Full Stack Developer who loves building web and mobile applications. I specialize in creating user-friendly designs and efficient back-end systems. Check out my work and let’s connect!</p>
       </div>
     </div>
   )

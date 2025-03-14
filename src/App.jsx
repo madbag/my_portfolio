@@ -4,12 +4,10 @@ import Navbar from "./Components/Navbar/Navbar";
 import Cards from "./Components/Cards/Cards";
 import { useState, useEffect } from "react";
 
-type Section = "Home" | "About" | "Projects" | "Resume" | "Contact";
-
 export default function App() {
-  const [activeSection, setActiveSection] = useState<Section>(() => {
+  const [activeSection, setActiveSection] = useState(() => {
     const saved = localStorage.getItem("activeSection");
-    return (saved as Section) || "Home";
+    return saved || "Home";
   });
 
   useEffect(() => {
@@ -17,7 +15,7 @@ export default function App() {
   }, [activeSection]);
 
   return (
-    <div className="App">
+    <div className="w-full min-h-screen flex flex-col bg-[var(--background-color)]">
       <Navbar setActiveSection={setActiveSection} />
       <Cards activeSection={activeSection} />
       <Footer />
