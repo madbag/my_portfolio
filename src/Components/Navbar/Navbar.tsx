@@ -6,7 +6,7 @@ interface NavbarProps {
   setActiveSection: (section: string) => void;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ setActiveSection }) => {
+export default function Navbar({ setActiveSection }: NavbarProps) {
   return (
     <nav>
       <div className="nav-left">
@@ -28,4 +28,4 @@ const Navbar: React.FC<NavbarProps> = ({ setActiveSection }) => {
   );
 };
 
-export default Navbar;
+

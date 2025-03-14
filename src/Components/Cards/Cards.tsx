@@ -19,63 +19,38 @@ interface CardsProps {
   activeSection: Section;
 }
 
-const Cards: React.FC<CardsProps> = ({ activeSection }) => {
+export default function Cards({ activeSection }: CardsProps) {
   return (
-    <div
-      className={`cards ${
-        activeSection === "Projects" ? "projects-active" : ""
-      } ${activeSection === "About" ? "about-active" : ""}`}
+    <motion.div
+      className={`cards ${activeSection}`}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
     >
       <div className="left">
         <About />
+        <div className="left-top">
+          <Pro1 className="project-card" />
+          <Pro2 className="project-card" />
+          <Pro3 className="project-card" />
+          <Pro className="project-card" />
+        </div>
 
-        {activeSection === "Projects" ? (
-          <motion.div layout className="projects-container">
-            <Pro1 />
-            <Pro2 />
-            <Pro3 />
-            <Pro />
-            <Pro5 />
-            <Pro6 />
-            <Pro7 />
-          </motion.div>
-        ) : activeSection === "About" ? (
-          <motion.div className="about-container">
-            <Spotify />
-            <Blog />
-            <Location />
-            <TechStack />
-          </motion.div>
-        ) : (
-          <>
-            <div className="left-top">
-              <Pro1 />
-              <Pro2 />
-              <Pro3 />
-              <Pro />
-            </div>
-
-            <div className="left-bottom">
-              <Spotify />
-              <div className="hobby">
-                <Blog />
-                <Location />
-              </div>
-            </div>
-          </>
-        )}
+        <div className="left-bottom">
+          <Spotify className="about-card" />
+          <div className="hobby">
+            <Blog className="about-card" />
+            <Location className="about-card" />
+          </div>
+        </div>
       </div>
 
-      {activeSection !== "Projects" && activeSection !== "About" && (
-        <motion.div layout className="right">
-          <Pro5 />
-          <Pro6 />
-          <Pro7 />
-          <TechStack />
-        </motion.div>
-      )}
-    </div>
+      <div className="right">
+        <Pro5 className="project-card" />
+        <Pro6 className="project-card" />
+        <Pro7 className="project-card" />
+        <TechStack className="about-card" />
+      </div>
+    </motion.div>
   );
-};
-
-export default Cards;
+}

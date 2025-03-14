@@ -1,9 +1,8 @@
 // import React from 'react'
 
-function DarkMode() {
+export default function DarkMode() {
   return (
     <div>DarkMode</div>
   )
 }
 
-export default DarkMode
