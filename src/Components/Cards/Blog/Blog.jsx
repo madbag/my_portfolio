@@ -1,8 +1,11 @@
-
+import MediumImage from"../../../../assets/Medium.png"
 
 function Blog() {
   return (
-    <div className="main">Medium</div>
+    <div className="">
+    <img src={MediumImage} alt="Blog-Image" className="object-cover"/>
+    <button>Redirect</button>
+    </div>
   )
 }
 

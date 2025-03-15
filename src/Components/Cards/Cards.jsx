@@ -16,15 +16,15 @@ import { motion } from "framer-motion";
 export default function Cards({ activeSection }) {
   return (
     <div
-      className={`cards ${
+    className={`cards grid gap-[20px] px-[20px] min-h-full max-w-full ${
         activeSection === "Projects" ? "projects-active" : ""
       } ${activeSection === "About" ? "about-active" : ""}`}
     >
-      <div className="left">
+       <div className="left grid gap-[20px]">
         <About />
 
         {activeSection === "Projects" ? (
-          <motion.div layout className="left">
+           <motion.div layout className="left grid gap-[20px]">
             <Pro1 />
             <Pro2 />
             <Pro3 />
@@ -34,7 +34,7 @@ export default function Cards({ activeSection }) {
             <Pro7 />
           </motion.div>
         ) : activeSection === "About" ? (
-          <motion.div className="about-container">
+          <motion.div className="about-container grid gap-[20px]">
             <Spotify />
             <Blog />
             <Location />
@@ -42,16 +42,16 @@ export default function Cards({ activeSection }) {
           </motion.div>
         ) : (
           <>
-            <div className="left-top">
+            <div className="left-top grid grid-cols-2 gap-[20px]">
               <Pro1 />
               <Pro2 />
               <Pro3 />
               <Pro />
             </div>
 
-            <div className="left-bottom">
+            <div className="left-bottom flex gap-[20px] items-center justify-center mx-auto">
               <Spotify />
-              <div className="hobby">
+              <div className="hobby flex flex-col gap-[20px]">
                 <Blog />
                 <Location />
               </div>
@@ -61,7 +61,7 @@ export default function Cards({ activeSection }) {
       </div>
 
       {activeSection !== "Projects" && activeSection !== "About" && (
-        <motion.div layout className="right">
+        <motion.div layout className="right grid grid-cols-2 gap-[20px]">
           <Pro5 />
           <Pro6 />
           <Pro7 />
