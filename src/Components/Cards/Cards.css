@@ -1,6 +1,7 @@
 .cards {
   max-width: 100%;
   display: grid;
+  align-items: start;
   grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
   gap: 20px;
   margin: 0 auto;
@@ -19,7 +20,9 @@
 }
 
 .right {
+  align-self: start;
   grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(250px, auto);
 }
 
 .left-top {

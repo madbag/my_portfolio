@@ -1,7 +1,7 @@
-import Memoji from "../../../../assets/Memoji1.svg"
+import Memoji from "../../../../assets/Memoji1.png"
 import "./About.css"
 
-function About() {
+export default function About() {
   return (
     <div className="main">
       <div className="top-div">
@@ -15,5 +15,3 @@ function About() {
     </div>
   )
 }
-
-export default About

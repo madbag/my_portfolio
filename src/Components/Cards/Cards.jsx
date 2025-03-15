@@ -16,15 +16,15 @@ import { motion } from "framer-motion";
 export default function Cards({ activeSection }) {
   return (
     <div
-    className={`cards grid gap-[20px] px-[20px] min-h-full max-w-full ${
+      className={`cards ${
         activeSection === "Projects" ? "projects-active" : ""
       } ${activeSection === "About" ? "about-active" : ""}`}
     >
-       <div className="left grid gap-[20px]">
+      <div className="left grid gap-[20px]">
         <About />
 
         {activeSection === "Projects" ? (
-           <motion.div layout className="left grid gap-[20px]">
+          <motion.div layout className="left grid gap-[20px]">
             <Pro1 />
             <Pro2 />
             <Pro3 />

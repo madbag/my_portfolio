@@ -16,8 +16,8 @@ export default function Pro1() {
         <p className="text-sm my-[5px]">
           A 30-day vanilla JavaScript coding challenge.
         </p>
-        <button className="px-[16px] py-[8px] bg-[var(--foreground-color)] text-[#000000] rounded-[4px] cursor-pointer hover:bg-[var(--hover-color)]">
-          Repository
+        <button className="px-[16px] py-[5px] bg-[var(--foreground-color)] text-[#000000] rounded-[4px] cursor-pointer hover:bg-[var(--hover-color)]">
+          R
         </button>
       </div>
     </div>
