@@ -21,12 +21,12 @@ export default function Cards({ activeSection }) {
   useEffect(() => {
     if (container.current) {
       console.log("Initializing Swapy...");
-      
+
       // Clean up any previous instance
       if (swapy.current) {
         swapy.current.destroy();
       }
-      
+
       // Create new instance
       swapy.current = createSwapy(container.current);
 
@@ -34,7 +34,7 @@ export default function Cards({ activeSection }) {
         console.error("Swapy did not initialize properly!");
       } else {
         console.log("Swapy initialized:", swapy.current);
-        
+
         swapy.current.onSwap((event) => {
           console.log("Items swapped:", event);
         });
@@ -53,35 +53,51 @@ export default function Cards({ activeSection }) {
       <div ref={container} className="cards projects-active">
         {/* In Projects view, each component gets its own slot */}
         <div data-swapy-slot="about-slot">
-          <div data-swapy-item="about-item"><About /></div>
+          <div data-swapy-item="about-item">
+            <About />
+          </div>
         </div>
-        
+
         <div data-swapy-slot="pro1-slot">
-          <div data-swapy-item="pro1-item"><Pro1 /></div>
+          <div data-swapy-item="pro1-item">
+            <Pro1 />
+          </div>
         </div>
-        
+
         <div data-swapy-slot="pro2-slot">
-          <div data-swapy-item="pro2-item"><Pro2 /></div>
+          <div data-swapy-item="pro2-item">
+            <Pro2 />
+          </div>
         </div>
-        
+
         <div data-swapy-slot="pro3-slot">
-          <div data-swapy-item="pro3-item"><Pro3 /></div>
+          <div data-swapy-item="pro3-item">
+            <Pro3 />
+          </div>
         </div>
-        
+
         <div data-swapy-slot="pro4-slot">
-          <div data-swapy-item="pro4-item"><Pro /></div>
+          <div data-swapy-item="pro4-item">
+            <Pro />
+          </div>
         </div>
-        
+
         <div data-swapy-slot="pro5-slot">
-          <div data-swapy-item="pro5-item"><Pro5 /></div>
+          <div data-swapy-item="pro5-item">
+            <Pro5 />
+          </div>
         </div>
-        
+
         <div data-swapy-slot="pro6-slot">
-          <div data-swapy-item="pro6-item"><Pro6 /></div>
+          <div data-swapy-item="pro6-item">
+            <Pro6 />
+          </div>
         </div>
-        
+
         <div data-swapy-slot="pro7-slot">
-          <div data-swapy-item="pro7-item"><Pro7 /></div>
+          <div data-swapy-item="pro7-item">
+            <Pro7 />
+          </div>
         </div>
       </div>
     );
@@ -90,26 +106,36 @@ export default function Cards({ activeSection }) {
       <div ref={container} className="cards about-active">
         {/* In About view */}
         <div data-swapy-slot="about-slot">
-          <div data-swapy-item="about-item"><About /></div>
+          <div data-swapy-item="about-item">
+            <About />
+          </div>
         </div>
-        
+
         <div data-swapy-slot="spotify-slot">
-          <div data-swapy-item="spotify-item"><Spotify /></div>
+          <div data-swapy-item="spotify-item">
+            <Spotify />
+          </div>
         </div>
-        
+
         <div data-swapy-slot="blog-slot">
-          <div data-swapy-item="blog-item"><Blog /></div>
+          <div data-swapy-item="blog-item">
+            <Blog />
+          </div>
         </div>
-        
+
         <div data-swapy-slot="location-slot">
-          <div data-swapy-item="location-item"><Location /></div>
+          <div data-swapy-item="location-item">
+            <Location />
+          </div>
         </div>
-        
+
         <div data-swapy-slot="tech-stack-slot">
-          <div data-swapy-item="tech-stack-item"><TechStack /></div>
+          <div data-swapy-item="tech-stack-item">
+            <TechStack />
+          </div>
         </div>
       </div>
-    );  
+    );
   } else {
     // Default view
     return (
@@ -117,59 +143,81 @@ export default function Cards({ activeSection }) {
         {/* For the main view, we'll use a different approach */}
         <div className="left">
           <div data-swapy-slot="about-slot">
-            <div data-swapy-item="about-item"><About /></div>
+            <div data-swapy-item="about-item">
+              <About />
+            </div>
           </div>
-          
+
           <div className="left-top">
             <div data-swapy-slot="pro1-slot">
-              <div data-swapy-item="pro1-item"><Pro1 /></div>
-            </div>
-            
-            <div data-swapy-slot="pro2-slot">
-              <div data-swapy-item="pro2-item"><Pro2 /></div>
-            </div>
-            
-            <div data-swapy-slot="pro3-slot">
-              <div data-swapy-item="pro3-item"><Pro3 /></div>
-            </div>
-            
-            <div data-swapy-slot="pro4-slot">
-              <div data-swapy-item="pro4-item"><Pro /></div>
-            </div>
-          </div>
-          
-          <div className="left-bottom">
-            <div data-swapy-slot="spotify-slot">
-              <div data-swapy-item="spotify-item"><Spotify /></div>
-            </div>
-            
-            <div className="hobby">
-              <div data-swapy-slot="blog-slot">
-                <div data-swapy-item="blog-item"><Blog /></div>
+              <div data-swapy-item="pro1-item">
+                <Pro1 />
               </div>
-              
-              <div data-swapy-slot="location-slot">
-                <div data-swapy-item="location-item"><Location /></div>
+            </div>
+
+            <div data-swapy-slot="pro2-slot">
+              <div data-swapy-item="pro2-item">
+                <Pro2 />
+              </div>
+            </div>
+
+            <div data-swapy-slot="pro3-slot">
+              <div data-swapy-item="pro3-item">
+                <Pro3 />
+              </div>
+            </div>
+
+            <div data-swapy-slot="pro4-slot">
+              <div data-swapy-item="pro4-item">
+                <Pro />
               </div>
             </div>
           </div>
         </div>
-        
+
         <div className="right">
-          <div data-swapy-slot="pro5-slot">
-            <div data-swapy-item="pro5-item"><Pro5 /></div>
-          </div>
-          
-          <div data-swapy-slot="pro6-slot">
-            <div data-swapy-item="pro6-item"><Pro6 /></div>
-          </div>
-          
-          <div data-swapy-slot="pro7-slot">
-            <div data-swapy-item="pro7-item"><Pro7 /></div>
-          </div>
-          
           <div data-swapy-slot="tech-stack-slot">
-            <div data-swapy-item="tech-stack-item"><TechStack /></div>
+            <div data-swapy-item="tech-stack-item">
+              <TechStack />
+            </div>
+          </div>
+
+          <div data-swapy-slot="pro5-slot">
+            <div data-swapy-item="pro5-item">
+              <Pro5 />
+            </div>
+          </div>
+
+          <div data-swapy-slot="pro6-slot">
+            <div data-swapy-item="pro6-item">
+              <Pro6 />
+            </div>
+          </div>
+
+          <div data-swapy-slot="pro7-slot">
+            <div data-swapy-item="pro7-item">
+              <Pro7 />
+            </div>
+          </div>
+
+          <div data-swapy-slot="spotify-slot">
+            <div data-swapy-item="spotify-item">
+              <Spotify />
+            </div>
+          </div>
+
+          <div className="hobby">
+            <div data-swapy-slot="blog-slot">
+              <div data-swapy-item="blog-item">
+                <Blog />
+              </div>
+            </div>
+
+            <div data-swapy-slot="location-slot">
+              <div data-swapy-item="location-item">
+                <Location />
+              </div>
+            </div>
           </div>
         </div>
       </div>

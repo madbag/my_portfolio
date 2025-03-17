@@ -1,53 +1,14 @@
 .cards {
-  max-width: 100%;
+  max-width:100%;
   display: grid;
   align-items: start;
-  grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
   margin: 0 auto;
   padding: 20px;
   align-content: center;
   justify-content: center;
   min-height: 100%;
 }
-
-/* .left,
-.right {
-  display: grid;
-  gap: 20px;
-}
-
-.left {
-  grid-template-columns: 1fr;
-}
-
-.right {
-  align-self: start;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: minmax(250px, auto);
-}
-
-.left-top {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 20px;
-}
-
-.left-bottom {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-items: center;
-  margin: 0 auto;
-  gap: 20px;
-} */
-
-/* .cards {
-  min-height: 400px; 
-  display: flex;
-  gap: 20px;
-} */
 
 /* Basic structure for different views */
 .cards.projects-active {
@@ -60,49 +21,37 @@
 
 /* Left and right sections for default view */
 .left {
-  flex: 2;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+
 }
 
 .right {
-  flex: 1;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
 }
 
 .left-top {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-.left-bottom {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
 }
 
 .hobby {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+
 }
 
 /* Swapy-specific styling */
 [data-swapy-slot] {
-  padding: 10px;
-  min-width: 100px;
-  min-height: 100px;
-  background-color: #f9f9f9;
+  padding: 5px;
+  min-width: 200px;
+  min-height: 200px;
   position: relative;
 }
 
 [data-swapy-item] {
-  background: #f0f0f0;
-  padding: 20px;
+  padding: 5px;
   cursor: grab;
   transition: transform 0.2s, box-shadow 0.2s;
 }
@@ -112,16 +61,16 @@
   z-index: 10;
 }
 
-/* Visual feedback during drag operations */
-.swapy-dragging {
+/* Visual feedback during drag operations  */
+/* .swapy-dragging {
   cursor: grabbing !important;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2) !important;
   transform: scale(1.02) !important;
   z-index: 100 !important;
   opacity: 0.8 !important;
-}
+} */
 
-.swapy-drop-target {
+/* .swapy-drop-target {
   box-shadow: 0 0 0 2px #3498db !important;
   background-color: #ecf0f1 !important;
-}
+} */
