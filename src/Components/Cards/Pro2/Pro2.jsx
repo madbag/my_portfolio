@@ -1,4 +1,7 @@
 import WeatherAI from "../../../../assets/Weather AI.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+
 export default function Pro2() {
   return (
     <div className="bg-[#ffffff] w-[300px] h-[400px] flex flex-col rounded-[20px] items-center overflow-hidden">
@@ -12,14 +15,14 @@ export default function Pro2() {
       <div className="flex-1 flex flex-col justify-center items-center p-[10px] text-center bg-white">
         <h3 className="text-xl font-semibold">AI Weather Forecast</h3>
         <p className="text-sm my-[5px]">
-          A 30-day vanilla JavaScript coding challenge.
+          AI weather forecast giving gen z summary
         </p>
-        <div className="flex flex-col">
-          <button className="px-[16px] py-[5px] bg-[var(--foreground-color)] text-[#000000] rounded-[4px] cursor-pointer hover:bg-[var(--hover-color)]">
-            R
+        <div className="flex flex-row">
+          <button className="px-[16px] py-[5px]  text-[#000000] rounded-[50px] cursor-pointer hover:bg-[var(--hover-color)]">
+          <FontAwesomeIcon icon={faGithub} size="lg" />
           </button>
-          <button className="px-[16px] py-[5px] bg-[var(--foreground-color)] text-[#000000] rounded-[4px] cursor-pointer hover:bg-[var(--hover-color)]">
-            L
+          <button className="px-[16px] py-[5px]  text-[#000000] rounded-[50px] cursor-pointer hover:bg-[var(--hover-color)]">
+           &#8599;
           </button>
         </div>
       </div>

@@ -6,10 +6,12 @@
   gap: 20px;
   margin: 0 auto;
   padding: 20px;
+  align-content: center;
+  justify-content: center;
   min-height: 100%;
 }
 
-.left,
+/* .left,
 .right {
   display: grid;
   gap: 20px;
@@ -39,4 +41,87 @@
   justify-items: center;
   margin: 0 auto;
   gap: 20px;
+} */
+
+/* .cards {
+  min-height: 400px; 
+  display: flex;
+  gap: 20px;
+} */
+
+/* Basic structure for different views */
+.cards.projects-active {
+  flex-direction: column;
+}
+
+.cards.about-active {
+  flex-direction: column;
+}
+
+/* Left and right sections for default view */
+.left {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.left-top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.left-bottom {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.hobby {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Swapy-specific styling */
+[data-swapy-slot] {
+  padding: 10px;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+[data-swapy-item] {
+  background: #f0f0f0;
+  padding: 20px;
+  cursor: grab;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+[data-swapy-item]:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+/* Visual feedback during drag operations */
+.swapy-dragging {
+  cursor: grabbing !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2) !important;
+  transform: scale(1.02) !important;
+  z-index: 100 !important;
+  opacity: 0.8 !important;
+}
+
+.swapy-drop-target {
+  box-shadow: 0 0 0 2px #3498db !important;
+  background-color: #ecf0f1 !important;
 }

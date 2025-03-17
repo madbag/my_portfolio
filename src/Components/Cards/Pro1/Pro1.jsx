@@ -1,5 +1,7 @@
 import JS30 from "../../../../assets/JS30.png";
 import "./Pro1.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function Pro1() {
   return (
@@ -16,8 +18,8 @@ export default function Pro1() {
         <p className="text-sm my-[5px]">
           A 30-day vanilla JavaScript coding challenge.
         </p>
-        <button className="px-[16px] py-[5px] bg-[var(--foreground-color)] text-[#000000] rounded-[4px] cursor-pointer hover:bg-[var(--hover-color)]">
-          R
+        <button className="px-[16px] py-[5px]  text-[#000000] rounded-[50px] cursor-pointer hover:bg-[var(--hover-color)]">
+          <FontAwesomeIcon icon={faGithub} size="lg" />
         </button>
       </div>
     </div>

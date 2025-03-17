@@ -1,5 +1,7 @@
 import React from "react";
 import Ventout from "../../../../assets/ventout.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function Pro3() {
   return (
@@ -14,14 +16,14 @@ function Pro3() {
       <div className="flex-1 flex flex-col justify-center items-center p-[10px] text-center bg-white">
         <h3 className="text-xl font-semibold">Vent out</h3>
         <p className="text-sm my-[5px]">
-          A 30-day vanilla JavaScript coding challenge.
+          A message sharing social media web app 
         </p>
-        <div className="flex flex-col">
-          <button className="px-[16px] py-[5px] bg-[var(--foreground-color)] text-[#000000] rounded-[4px] cursor-pointer hover:bg-[var(--hover-color)]">
-            R
+        <div className="flex flex-row">
+          <button className="px-[16px] py-[5px]  text-[#000000] rounded-[50px] cursor-pointer hover:bg-[var(--hover-color)]">
+          <FontAwesomeIcon icon={faGithub} size="lg" />
           </button>
-          <button className="px-[16px] py-[5px] bg-[var(--foreground-color)] text-[#000000] rounded-[4px] cursor-pointer hover:bg-[var(--hover-color)]">
-            L
+          <button className="px-[16px] py-[5px]  text-[#000000] rounded-[50px] cursor-pointer hover:bg-[var(--hover-color)]">
+           &#8599;
           </button>
         </div>
       </div>
