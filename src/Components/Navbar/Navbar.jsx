@@ -27,7 +27,7 @@ export default function Navbar({ setActiveSection }) {
             href="https://drive.google.com/file/d/1_QI04Sw1lz94SBOGLbzVa-1lm5NqeJcY/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            className="no-underline"
+            className="no-underline "
           >
             Resume
           </a>

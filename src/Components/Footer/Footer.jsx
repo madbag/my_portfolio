@@ -1,31 +1,48 @@
+import Github from "../../../assets/mingcute_github-fill.svg";
+import LinkedIn from "../../../assets/mingcute_linkedin-fill.svg";
+import Email from "../../../assets/Vector.svg";
+import Medium from "../../../assets/ri_medium-fill (1).svg";
 
 export default function Footer() {
   return (
     <div className="mt-auto py-[50px] flex flex-col items-center justify-center">
-      <p>Thank you Nev Flynn for the idea 🌸</p>
+      <p>
+        Thank you{" "}
+        <a
+          href="https://nevflynn.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-500 hover:underline no-underline "
+        >
+          Nev Flynn
+        </a>{" "}
+        for the idea 🌸
+      </p>
 
       <div className="footer-bottom flex flex-row justify-center gap-[10px] mt-[10px]">
         <a
           href="https://www.linkedin.com/in/madhushreeb/"
-          className="text-blue-500 hover:text-blue-700"
           target="_blank"
           rel="noopener noreferrer"
         >
-          LinkedIn
+          <img src={LinkedIn} alt="LinkedIn" className="w-6 h-6" />
         </a>
         <a
           href="https://github.com/madbag"
-          className="text-blue-500 hover:text-blue-700"
           target="_blank"
           rel="noopener noreferrer"
         >
-          GitHub
+          <img src={Github} alt="GitHub" className="w-6 h-6" />
+        </a>
+        <a href="mailto:boylemadhushree@gmail.com">
+          <img src={Email} alt="Email" className="w-5 h-5 pt-[5px]" />
         </a>
         <a
-          href="mailto:boylemadhushree@gmail.com"
-          className="text-blue-500 hover:text-blue-700"
+          href="https://medium.com/@madhushree.b"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          Email
+          <img src={Medium} alt="Medium" className="w-6 h-6" />
         </a>
       </div>
     </div>

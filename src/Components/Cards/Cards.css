@@ -1,53 +1,18 @@
 .cards {
   max-width:100%;
   display: grid;
-  align-items: start;
-  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
-  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-flow: dense;
+  grid-auto-flow: row; 
+  gap: 10px;
   padding: 20px;
-  align-content: center;
-  justify-content: center;
   min-height: 100%;
 }
 
-/* Basic structure for different views */
-.cards.projects-active {
-  flex-direction: column;
-}
 
-.cards.about-active {
-  flex-direction: column;
-}
-
-/* Left and right sections for default view */
-.left {
-  display: flex;
-  flex-direction: column;
-
-}
-
-.right {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.left-top {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.hobby {
-  display: flex;
-  flex-direction: column;
-
-}
-
-/* Swapy-specific styling */
 [data-swapy-slot] {
-  padding: 5px;
-  min-width: 200px;
-  min-height: 200px;
-  position: relative;
+  display: block;
+  width: 100%;
 }
 
 [data-swapy-item] {
@@ -57,20 +22,32 @@
 }
 
 [data-swapy-item]:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
   z-index: 10;
 }
 
-/* Visual feedback during drag operations  */
-/* .swapy-dragging {
-  cursor: grabbing !important;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2) !important;
-  transform: scale(1.02) !important;
-  z-index: 100 !important;
-  opacity: 0.8 !important;
-} */
+[data-swapy-slot="tech-stack-slot"] {
+  grid-column: span 1; /* Makes it stretch across two columns */
+}
 
-/* .swapy-drop-target {
-  box-shadow: 0 0 0 2px #3498db !important;
-  background-color: #ecf0f1 !important;
-} */
+[data-swapy-slot="spotify-slot"] {
+  grid-column: span 1;
+  grid-row: span 2;/* Makes it taller */
+}
+
+[data-swapy-slot="pro5-slot"] {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+[data-swapy-slot="pro6-slot"] {
+  grid-column: span 1;
+}
+
+[data-swapy-slot="blog-slot"] {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+[data-swapy-slot="about-slot"] {
+  grid-column: span 2; /* Ensures it stays in its space */
+}
