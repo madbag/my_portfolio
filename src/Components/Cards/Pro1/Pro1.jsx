@@ -21,7 +21,7 @@ export default function Pro1() {
           </p>
         </div>
         <button className="p-[10px] rounded-full cursor-pointer hover:bg-[var(--hover-color)] mt-auto border-none">
-          <a href="https://github.com/madbag/Javascript_30" target="_blank" >
+          <a href="https://github.com/madbag/Javascript_30" target="_blank" className="text-[#000000]">
             <FontAwesomeIcon icon={faGithub} size="lg" />
           </a>
         </button>

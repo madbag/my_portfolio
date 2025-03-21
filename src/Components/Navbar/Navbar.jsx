@@ -1,8 +1,8 @@
-
 import Image from "../../../assets/Madhushree.svg";
 import DarkMode from "./DarkMode/DarkMode";
+import { useState } from "react";
 
-export default function Navbar({ setActiveSection }) {
+export default function Navbar({ activeSection, setActiveSection }) {
   return (
     <nav className="min-w-[700px] flex justify-center items-center my-[40px]">
       <div>
@@ -27,7 +27,7 @@ export default function Navbar({ setActiveSection }) {
             href="https://drive.google.com/file/d/1_QI04Sw1lz94SBOGLbzVa-1lm5NqeJcY/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            className="no-underline "
+            className="no-underline text-[#000000] "
           >
             Resume
           </a>
@@ -38,11 +38,13 @@ export default function Navbar({ setActiveSection }) {
         >
           About
         </p>
-        <p
-          className="mx-[10px] px-[5px] font-medium cursor-pointer"
-          onClick={() => setActiveSection("Contact")}
-        >
-          Contact
+        <p className="mx-[10px] px-[5px] font-medium cursor-pointer">
+          <a
+            href="mailto:boylemadhushree@gmail.com"
+            className="no-underline text-[#000000] "
+          >
+            Contact
+          </a>
         </p>
       </div>
 

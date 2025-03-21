@@ -35,7 +35,7 @@ export default function Footer() {
           <img src={Github} alt="GitHub" className="w-6 h-6" />
         </a>
         <a href="mailto:boylemadhushree@gmail.com">
-          <img src={Email} alt="Email" className="w-5 h-5 pt-[5px]" />
+          <img src={Email} alt="Email" className="w-5 h-5 pt-[4px]" />
         </a>
         <a
           href="https://medium.com/@madhushree.b"

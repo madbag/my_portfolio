@@ -1,4 +1,3 @@
-import "./App.css";
 import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
 import Cards from "./Components/Cards/Cards";
@@ -16,7 +15,7 @@ export default function App() {
 
   return (
     <div className="w-full min-h-screen flex flex-col bg-[var(--background-color)]">
-      <Navbar setActiveSection={setActiveSection} />
+      <Navbar setActiveSection={setActiveSection} activeSection={activeSection} />
       <Cards activeSection={activeSection} />
       <Footer />
     </div>

@@ -21,13 +21,13 @@ function Pro5() {
           </p>
         </div>
         <div className="flex flex-row mt-auto">
-          <button className="px-[10px] py-[10px] mx-[5px] text-[#000000] rounded-full cursor-pointer hover:bg-[var(--hover-color)] border-none">
+          <button className="px-[10px] py-[10px] mx-[5px]  rounded-full cursor-pointer hover:bg-[var(--hover-color)] border-none">
             <a href="https://github.com/m091u/GreenMind---ecommerce" target="_blank">
-            <FontAwesomeIcon icon={faGithub} size="lg" />
+            <FontAwesomeIcon icon={faGithub} size="lg" className="text-[#000000]"/>
             </a>
           </button>
-          <button className="px-[10px] py-[10px] mx-[5px] text-[#000000] rounded-full cursor-pointer hover:bg-[var(--hover-color)] border-none">
-            <a href="https://greenmind-shop.netlify.app/" target="_blank" className="no-underline ">
+          <button className="px-[10px] py-[10px] mx-[5px]  rounded-full cursor-pointer hover:bg-[var(--hover-color)] border-none">
+            <a href="https://greenmind-shop.netlify.app/" target="_blank" className="no-underline text-[#000000] ">
             &#8599;
             </a>
           </button>

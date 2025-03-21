@@ -21,16 +21,17 @@ export default function Pro2() {
         </div>
 
         <div className="flex flex-row mt-auto">
-          <button className="px-[10px] py-[10px] mx-[5px] text-[#000000] rounded-full cursor-pointer hover:bg-[var(--hover-color)] border-none">
+          <button className="px-[10px] py-[10px] mx-[5px] rounded-full cursor-pointer hover:bg-[var(--hover-color)] border-none">
             <a
               href="https://github.com/madbag/WeatherForecastApp"
               target="_blank"
+              className="text-[#000000]"
             >
               <FontAwesomeIcon icon={faGithub} size="lg" />
             </a>
           </button>
-          <button className="px-[10px] py-[10px] mx-[5px] text-[#000000] rounded-full cursor-pointer hover:bg-[var(--hover-color)] border-none">
-            <a href="https://aiweatherforecast.netlify.app/" target="_blank" className="no-underline">
+          <button className="px-[10px] py-[10px] mx-[5px]  rounded-full cursor-pointer hover:bg-[var(--hover-color)] border-none">
+            <a href="https://aiweatherforecast.netlify.app/" target="_blank" className="no-underline text-[#000000]">
             &#8599;
             </a>
           </button>

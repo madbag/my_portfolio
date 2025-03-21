@@ -9,7 +9,6 @@
   min-height: 100%;
 }
 
-
 [data-swapy-slot] {
   display: block;
   width: 100%;
@@ -26,28 +25,11 @@
   z-index: 10;
 }
 
-[data-swapy-slot="tech-stack-slot"] {
-  grid-column: span 1; /* Makes it stretch across two columns */
-}
-
 [data-swapy-slot="spotify-slot"] {
   grid-column: span 1;
   grid-row: span 2;/* Makes it taller */
 }
 
-[data-swapy-slot="pro5-slot"] {
-  grid-column: span 1;
-  grid-row: span 1;
-}
-
-[data-swapy-slot="pro6-slot"] {
-  grid-column: span 1;
-}
-
-[data-swapy-slot="blog-slot"] {
-  grid-column: span 1;
-  grid-row: span 1;
-}
 [data-swapy-slot="about-slot"] {
-  grid-column: span 2; /* Ensures it stays in its space */
+  grid-column: span 2; 
 }

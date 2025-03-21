@@ -23,7 +23,7 @@ function Pro6() {
 
         <button className="px-[10px] py-[10px] mt-auto rounded-full cursor-pointer hover:bg-[var(--hover-color)] border-none">
           <a href="https://github.com/virgoeun/WD-PR2-BAM" target="_blank">
-            <FontAwesomeIcon icon={faGithub} size="lg" />
+            <FontAwesomeIcon icon={faGithub} size="lg" className="text-[#000000]"/>
           </a>
         </button>
       </div>
