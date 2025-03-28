@@ -1,16 +1,16 @@
 import { useEffect, useRef } from "react";
 import { createSwapy } from "swapy";
-import About from "./About/About";
-import Pro1 from "./Pro1/Pro1";
-import Pro2 from "./Pro2/Pro2";
-import Pro3 from "./Pro3/Pro3";
-import Pro from "./Pro4/Pro";
-import Spotify from "./Spotify/Spotify";
+import About from "./About";
+import Pro1 from "./Pro1";
+import Pro2 from "./Pro2";
+import Pro3 from "./Pro3";
+import Pro from "./Pro";
+import Spotify from "./Spotify";
 
-import Pro5 from "./Pro5/Pro5";
-import Pro6 from "./Pro6/Pro6";
-import Pro7 from "./Pro7/Pro7";
-import TechStack from "./TechStack/TechStack";
+import Pro5 from "./Pro5";
+import Pro6 from "./Pro6";
+import Pro7 from "./Pro7";
+import TechStack from "./TechStack";
 import "./Cards.css";
 
 export default function Cards({ activeSection }) {

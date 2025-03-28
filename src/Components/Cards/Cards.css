@@ -27,7 +27,7 @@
 
 [data-swapy-slot="spotify-slot"] {
   grid-column: span 1;
-  grid-row: span 2;/* Makes it taller */
+  grid-row: span 2;
 }
 
 [data-swapy-slot="about-slot"] {
