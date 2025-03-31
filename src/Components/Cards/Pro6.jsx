@@ -1,4 +1,4 @@
-import Huggers from "../../../../assets/Hugging Face.svg";
+import Huggers from "../../../assets/Hugging Face.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 // import React from "react";

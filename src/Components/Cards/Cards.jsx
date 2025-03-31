@@ -19,7 +19,7 @@ export default function Cards({ activeSection }) {
 
   useEffect(() => {
     if (container.current) {
-      console.log("Initializing Swapy...");
+      // console.log("Initializing Swapy...");
 
       // Clean up any previous instance
       if (swapy.current) {

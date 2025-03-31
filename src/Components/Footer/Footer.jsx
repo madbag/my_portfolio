@@ -8,14 +8,14 @@ export default function Footer() {
     <div className="mt-auto py-[50px] flex flex-col items-center justify-center">
       <p>
         Thank you{" "}
-        <a
+        <span
           href="https://nevflynn.com/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-500 hover:underline no-underline "
+          className="no-underline hover:text-[#808080]"
         >
           Nev Flynn
-        </a>{" "}
+        </span>{" "}
         for the idea 🌸
       </p>
 

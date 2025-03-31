@@ -1,4 +1,4 @@
-import JS30 from "../../../../assets/JavaScript_Project.svg";
+import JS30 from "../../../assets/JavaScript_Project.svg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";

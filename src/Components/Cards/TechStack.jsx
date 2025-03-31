@@ -1,17 +1,17 @@
-import HTMLIcon from "../../../../assets/Html 5.svg";
-import CSSIcon from "../../../../assets/CSS3.svg";
-import JSIcon from "../../../../assets/JavaScript.svg";
-import ReactIcon from "../../../../assets/React Native.svg";
-import BootstrapIcon from "../../../../assets/Bootstrap.svg";
+import HTMLIcon from "../../../assets/Html 5.svg";
+import CSSIcon from "../../../assets/CSS3.svg";
+import JSIcon from "../../../assets/JavaScript.svg";
+import ReactIcon from "../../../assets/React Native.svg";
+import BootstrapIcon from "../../../assets/Bootstrap.svg";
 
-import PythonIcon from "../../../../assets/Python.svg";
-import MongoIcon from "../../../../assets/MongoDB.svg";
-import TsIcon from "../../../../assets/TypeScript.svg";
+import PythonIcon from "../../../assets/Python.svg";
+import MongoIcon from "../../../assets/MongoDB.svg";
+import TsIcon from "../../../assets/TypeScript.svg";
 
-import NodeIcon from "../../../../assets/Nodejs.svg";
+import NodeIcon from "../../../assets/Nodejs.svg";
 
-import GitIcon from "../../../../assets/Git.svg";
-import WordpressIcon from "../../../../assets/WordPress.svg";
+import GitIcon from "../../../assets/Git.svg";
+import WordpressIcon from "../../../assets/WordPress.svg";
 
 export default function TechStack() {
   return (

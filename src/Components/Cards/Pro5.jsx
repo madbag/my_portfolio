@@ -1,5 +1,5 @@
 // import React from "react";
-import Greenmind from "../../../../assets/Potted Plant.svg";
+import Greenmind from "../../../assets/Potted Plant.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 

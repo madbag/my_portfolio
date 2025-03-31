@@ -1,4 +1,4 @@
-import Kowa from "../../../../assets/Home Office.svg";
+import Kowa from "../../../assets/Home Office.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 

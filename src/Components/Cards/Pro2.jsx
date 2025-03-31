@@ -1,4 +1,4 @@
-import WeatherAI from "../../../../assets/The Weather Channel.svg";
+import WeatherAI from "../../../assets/The Weather Channel.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 

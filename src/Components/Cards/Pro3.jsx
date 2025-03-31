@@ -1,5 +1,5 @@
 import React from "react";
-import Ventout from "../../../../assets/VO.svg";
+import Ventout from "../../../assets/VO.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 

@@ -1,4 +1,4 @@
-import Memoji from "../../../../assets/Memoji1.png"
+import Memoji from "../../../assets/Memoji1.png"
 
 
 export default function About() {
