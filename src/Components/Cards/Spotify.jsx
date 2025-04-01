@@ -2,8 +2,7 @@ export default function Spotify() {
   return (
     <div>
       <iframe
-        className="spotify-iframe" 
-        style={{ width: '100%', borderRadius: '20px'}} 
+        className="ml-[5px] w-full rounded-[20px]"
         src="https://open.spotify.com/embed/playlist/37i9dQZF1FoAwNYT1aMLMe?utm_source=generator"
         width="300" 
         height="620"

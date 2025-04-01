@@ -50,14 +50,6 @@ export default function Cards({ activeSection }) {
   if (activeSection === "Projects") {
     return (
       <div ref={container} className="cards projects-active">
-        {/* In Projects view, each component gets its own slot */}
-
-        <div data-swapy-slot="about-slot">
-          <div data-swapy-item="about-item">
-            <About />
-          </div>
-        </div>
-
         <div data-swapy-slot="pro1-slot">
           <div data-swapy-item="pro1-item">
             <Pro1 />
@@ -104,7 +96,6 @@ export default function Cards({ activeSection }) {
   } else if (activeSection === "About") {
     return (
       <div ref={container} className="cards about-active">
-        {/* In About view */}
         <div data-swapy-slot="about-slot">
           <div data-swapy-item="about-item">
             <About />
@@ -128,7 +119,6 @@ export default function Cards({ activeSection }) {
     // Default view
     return (
       <div ref={container} className="cards">
-      
         <div data-swapy-slot="about-slot">
           <div data-swapy-item="about-item">
             <About />
@@ -139,7 +129,7 @@ export default function Cards({ activeSection }) {
             <TechStack />
           </div>
         </div>
-        
+
         <div data-swapy-slot="pro1-slot">
           <div data-swapy-item="pro1-item">
             <Pro1 />
@@ -163,7 +153,7 @@ export default function Cards({ activeSection }) {
             <Pro />
           </div>
         </div>
-       
+
         <div data-swapy-slot="spotify-slot">
           <div data-swapy-item="spotify-item">
             <Spotify />
@@ -188,7 +178,6 @@ export default function Cards({ activeSection }) {
           </div>
         </div>
       </div>
-
     );
   }
 }

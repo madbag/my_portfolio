@@ -1,16 +1,17 @@
 import Image from "../../../assets/Madhushree.svg";
-import DarkMode from "./DarkMode/DarkMode";
+import DarkMode from "./DarkMode";
+import { motion } from "framer-motion";
 
 export default function Navbar({ activeSection, setActiveSection }) {
   return (
     <nav className="min-w-[700px] flex justify-center items-center my-[40px]">
-      <div>
-        <img src={Image} alt="My name" className="w-[200px]" />{" "}
+      <div onClick={() => setActiveSection("Home")} className="cursor-pointer">
+        <img src={Image} alt="My name" className="w-[200px]" />
       </div>
 
-      <div className="bg-[#0000000D] px-[5px] py-[5px] rounded-full flex justify-center items-center mx-[270px]">
-        <p
-          className={`px-[15px] py-[5px] mr-[5px] font-medium cursor-pointer rounded-full hover:text-[#808080]
+      <div className="bg-[var(--middle-nav-bar)] px-[5px] py-[5px] rounded-full flex justify-center items-center mx-[270px]">
+        <motion.p
+          className={`px-[15px] py-[5px] font-medium cursor-pointer rounded-full hover:text-[#808080]
             ${
               activeSection === "Home"
                 ? "bg-[#ffffff] px-[5px]"
@@ -22,9 +23,10 @@ export default function Navbar({ activeSection, setActiveSection }) {
           }}
         >
           Home
-        </p>
-        <p
-          className={`px-[15px] py-[5px] mr-[5px] font-medium cursor-pointer rounded-full hover:text-[#808080]
+        </motion.p>
+
+        <motion.p
+          className={`px-[15px] py-[5px] font-medium cursor-pointer rounded-full hover:text-[#808080]
             ${
               activeSection === "Projects"
                 ? "bg-[#ffffff] px-[5px]"
@@ -36,9 +38,10 @@ export default function Navbar({ activeSection, setActiveSection }) {
           }}
         >
           Projects
-        </p>
-        <p
-          className={`px-[15px] py-[5px] mr-[5px] font-medium cursor-pointer rounded-full hover:text-[#808080]
+        </motion.p>
+
+        <motion.p
+          className={`px-[15px] py-[5px] font-medium cursor-pointer rounded-full hover:text-[#808080]
            
           `}
           onClick={() => {
@@ -53,21 +56,31 @@ export default function Navbar({ activeSection, setActiveSection }) {
           >
             Resume
           </a>
-        </p>
-        <p
-          className="mx-[10px] px-[5px] font-medium cursor-pointer hover:text-[#808080]"
-          onClick={() => setActiveSection("About")}
+        </motion.p>
+
+        <motion.p
+          className={`px-[15px] py-[5px] font-medium cursor-pointer rounded-full hover:text-[#808080]
+            ${
+              activeSection === "About"
+                ? "bg-[#ffffff] px-[5px]"
+                : "hover:bg-gray-300"
+            }
+          `}
+          onClick={() => {
+            setActiveSection("About");
+          }}
         >
           About
-        </p>
-        <p className="mx-[10px] px-[5px] font-medium cursor-pointer hover:text-[#e2dfd2]">
+        </motion.p>
+
+        <motion.p className="mx-[10px] px-[5px] font-medium cursor-pointer hover:text-[#e2dfd2]">
           <a
             href="mailto:boylemadhushree@gmail.com"
             className="no-underline text-[#000000] hover:text-[#808080]"
           >
             Contact
           </a>
-        </p>
+        </motion.p>
       </div>
 
       <div className="nav-right">

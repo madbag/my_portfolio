@@ -15,10 +15,10 @@ import WordpressIcon from "../../../assets/WordPress.svg";
 
 export default function TechStack() {
   return (
-    <div className="bg-[var(--secondary-text-color)] rounded-[20px] flex flex-col gap-6 h-[300px] w-[300px] p-[28px]">
+    <div className="bg-[var(--secondary-text-color)] text-[var(--primary-text-color)] rounded-[20px] flex flex-col gap-6 h-[300px] w-[300px] p-[28px] border-[var(--border-color)]">
       <div>
         <h3 className="mb-[10px]">Tech Stack: </h3>
-        <h4 className="text-lg font-semibold mb-[10px]">Front End:</h4>
+        <h4 className="text-lg font-semibold mb-[10px]">Frontend:</h4>
         <div className="flex flex-wrap gap-4 mt-2 mb-[10px]">
           <img src={HTMLIcon} alt="HTML" className="w-10 h-10 mr-[5px]" />
           <img src={CSSIcon} alt="CSS" className="w-10 h-10 mr-[5px]" />
@@ -31,7 +31,7 @@ export default function TechStack() {
       </div>
 
       <div>
-        <h4 className="text-lg font-semibold mb-[10px]">Back End:</h4>
+        <h4 className="text-lg font-semibold mb-[10px]">Backend:</h4>
         <div className="flex flex-wrap gap-4 mt-2 mb-[10px]">
           <img src={PythonIcon} alt="Python" className="w-10 h-10 mr-[5px]" />
           <img src={MongoIcon} alt="MongoDB" className="w-10 h-10 mr-[5px]" />

@@ -5,12 +5,12 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function Pro() {
   return (
-    <div className="bg-[#ffffff] flex flex-col rounded-[20px] items-start h-[300px] w-[300px] p-[28px]">
+    <div className="bg-[var(--secondary-text-color)] text-[var(--primary-text-color)] flex flex-col rounded-[20px] items-start h-[300px] w-[300px] p-[28px]">
       <div className="flex justify-center items-center">
         <img
           src={FTF}
           alt="FightTheFireIcon"
-          className="w-[70px] h-[70px] object-cover "
+          className="w-[70px] h-[70px] object-cover mb-[50px] "
         />
       </div>
 
