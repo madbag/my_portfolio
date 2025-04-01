@@ -16,10 +16,10 @@ export default function DarkMode() {
     }
   }, [darkMode]);
   return (
-    <button className="rounded-full border border-gray-400 px-[15px] py-[5px] "
+    <button className="rounded-full border bg-[var(--primary-text-color)] text-[var(--secondary-text-color)]  border-gray-400 px-[15px] py-[5px]"
     onClick={() => setDarkMode(!darkMode)} >
       
-      {darkMode ? "☀️ Light" : "🌙 Dark"}
+      {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
     </button>
   );
 }

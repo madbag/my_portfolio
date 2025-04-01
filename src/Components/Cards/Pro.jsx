@@ -18,7 +18,7 @@ function Pro() {
         <div className="mt-auto">
           <h3 className="text-xl font-semibold">Fight the Fire</h3>
           <p className="text-[12px] my-[5px] mr-[5px]">
-            Timer based Wack-a-mole web game
+            Timer based web game
           </p>
         </div>
 

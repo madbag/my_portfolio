@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Navbar({ activeSection, setActiveSection }) {
   return (
-    <nav className="min-w-[700px] flex justify-center items-center my-[40px]">
+    <nav className="min-w-[700px] flex justify-center items-center my-[40px] ">
       <div onClick={() => setActiveSection("Home")} className="cursor-pointer">
         <img src={Image} alt="My name" className="w-[200px]" />
       </div>
