@@ -18,34 +18,21 @@ export default function Cards({ activeSection }) {
   const container = useRef(null);
 
   useEffect(() => {
+    // If container element is loaded
     if (container.current) {
-      // console.log("Initializing Swapy...");
-
-      // Clean up any previous instance
-      if (swapy.current) {
-        swapy.current.destroy();
-      }
-
-      // Create new instance
       swapy.current = createSwapy(container.current);
 
-      if (!swapy.current) {
-        console.error("Swapy did not initialize properly!");
-      } else {
-        console.log("Swapy initialized:", swapy.current);
-
-        swapy.current.onSwap((event) => {
-          console.log("Items swapped:", event);
-        });
-      }
+      // Your event listeners
+      swapy.current.onSwap((event) => {
+        console.log("swap", event);
+      });
     }
 
     return () => {
-      if (swapy.current) {
-        swapy.current.destroy();
-      }
+      // Destroy the swapy instance on component destroy
+      swapy.current?.destroy();
     };
-  }, [activeSection]); // Re-initialize when section changes
+  }, []);
 
   if (activeSection === "Projects") {
     return (

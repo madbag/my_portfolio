@@ -14,7 +14,7 @@ export default function App() {
   }, [activeSection]);
 
   return (
-    <div className="w-full min-h-screen flex flex-col bg-[var(--background-color)]">
+    <div className="lg:w-full min-h-screen flex flex-col bg-[var(--background-color)]">
       <Navbar setActiveSection={setActiveSection} activeSection={activeSection} />
       <Cards activeSection={activeSection} />
       <Footer />
