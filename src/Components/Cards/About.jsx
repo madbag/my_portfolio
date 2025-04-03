@@ -2,7 +2,7 @@ import Memoji from "../../../assets/Memoji1.png";
 
 export default function About() {
   return (
-    <div className="bg-[var(--secondary-text-color)] text-[var(--primary-text-color)] rounded-[20px] p-[32px] h-[300px] w-[620px] flex flex-col border-[var(--border-color)] ">
+    <div className="bg-[var(--secondary-text-color)] text-[var(--primary-text-color)] rounded-[20px] p-[26px] sm:p-[36px] h-[300px] w-[600px] sm:w-auto flex flex-col border-[var(--border-color)] ">
       <div className="flex mt-2.5">
         <img
           src={Memoji}
