@@ -1,21 +1,24 @@
 import Image from "../../../assets/Madhushree.svg";
 import DarkMode from "./DarkMode";
-import { motion } from "framer-motion";
+import "./Navbar.css"
 
 export default function Navbar({ activeSection, setActiveSection }) {
   return (
-    <nav className="min-w-[700px] flex justify-center items-center my-[40px] ">
-      <div onClick={() => setActiveSection("Home")} className="cursor-pointer">
+    <nav className="navbar w-full flex flex-row  items-center justify-between max-w-[1300px] mx-auto py-4 px-4 my-[40px] text-sm">
+      <div
+        onClick={() => setActiveSection("Home")}
+        className="cursor-pointer mb-4"
+      >
         <img src={Image} alt="My name" className="w-[200px]" />
       </div>
 
-      <div className="bg-[var(--middle-nav-bar)] px-[5px] py-[5px] rounded-full flex justify-center items-center mx-[270px]">
-        <motion.p
-          className={`px-[15px] py-[5px] font-medium cursor-pointer rounded-full hover:text-[#808080]
+      <div className="middle-nav text-[14px] bg-[var(--middle-nav-bar)] px-[5px] py-[5px] rounded-full flex justify-center items-center">
+        <p
+          className={`px-[15px] py-[5px] font-medium cursor-pointer rounded-full hover:text-[var(--hover-text-color)]
             ${
               activeSection === "Home"
-                ? "bg-[#ffffff] px-[5px]"
-                : "hover:bg-gray-300"
+                ? "bg-[var(--secondary-text-color)] text-[var(--primary-text-color)] px-[5px]"
+                : ""
             }
           `}
           onClick={() => {
@@ -23,14 +26,14 @@ export default function Navbar({ activeSection, setActiveSection }) {
           }}
         >
           Home
-        </motion.p>
+        </p>
 
-        <motion.p
-          className={`px-[15px] py-[5px] font-medium cursor-pointer rounded-full hover:text-[#808080]
+        <p
+          className={`px-[15px] py-[5px] font-medium cursor-pointer rounded-full hover:text-[var(--hover-text-color)]
             ${
               activeSection === "Projects"
-                ? "bg-[#ffffff] px-[5px]"
-                : "hover:bg-gray-300"
+                ? "bg-[var(--secondary-text-color)] text-[var(--primary-text-color)] px-[5px]"
+                : ""
             }
           `}
           onClick={() => {
@@ -38,10 +41,10 @@ export default function Navbar({ activeSection, setActiveSection }) {
           }}
         >
           Projects
-        </motion.p>
+        </p>
 
-        <motion.p
-          className={`px-[15px] py-[5px] font-medium cursor-pointer rounded-full hover:text-[#808080]
+        <p
+          className={`px-[15px] py-[5px] font-medium cursor-pointer rounded-full hover:text-[var(--hover-text-color)]
            
           `}
           onClick={() => {
@@ -52,18 +55,18 @@ export default function Navbar({ activeSection, setActiveSection }) {
             href="https://drive.google.com/file/d/1_QI04Sw1lz94SBOGLbzVa-1lm5NqeJcY/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            className="no-underline text-[#000000] hover:text-[#808080]"
+            className="no-underline text-[#000000] hover:text-[var(--hover-text-color)]"
           >
             Resume
           </a>
-        </motion.p>
+        </p>
 
-        <motion.p
-          className={`px-[15px] py-[5px] font-medium cursor-pointer rounded-full hover:text-[#808080]
+        <p
+          className={`px-[15px] py-[5px] font-medium cursor-pointer rounded-full hover:text-[var(--hover-text-color)]
             ${
               activeSection === "About"
-                ? "bg-[#ffffff] px-[5px]"
-                : "hover:bg-gray-300"
+                ? "bg-[var(--secondary-text-color)] text-[var(--primary-text-color)] px-[5px]"
+                : ""
             }
           `}
           onClick={() => {
@@ -71,16 +74,16 @@ export default function Navbar({ activeSection, setActiveSection }) {
           }}
         >
           About
-        </motion.p>
+        </p>
 
-        <motion.p className="mx-[10px] px-[5px] font-medium cursor-pointer hover:text-[#e2dfd2]">
+        <p className="mx-[10px] px-[5px] font-medium cursor-pointer hover:text-[var(--hover-text-color)]">
           <a
             href="mailto:boylemadhushree@gmail.com"
-            className="no-underline text-[#000000] hover:text-[#808080]"
+            className="no-underline text-[#000000] hover:text-[var(--hover-text-color)]"
           >
             Contact
           </a>
-        </motion.p>
+        </p>
       </div>
 
       <div className="nav-right">

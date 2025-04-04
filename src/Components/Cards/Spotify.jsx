@@ -1,8 +1,9 @@
+import "./Spotify.css";
 export default function Spotify() {
   return (
     <div>
       <iframe
-        className="ml-[5px] w-full rounded-[20px]"
+        className=" spotify-card w-full rounded-[20px] "
         src="https://open.spotify.com/embed/playlist/37i9dQZF1FoAwNYT1aMLMe?utm_source=generator"
         width="300" 
         height="620"

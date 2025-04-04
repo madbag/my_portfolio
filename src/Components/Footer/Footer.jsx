@@ -1,8 +1,8 @@
-
+import "./Footer.css"
 
 export default function Footer() {
   return (
-    <div className=" text-[var(--primary-text-color)] mt-auto py-[50px] flex flex-col items-center justify-center">
+    <div className="footer text-[var(--primary-text-color)] mt-auto py-[50px] flex flex-col items-center justify-center">
       <p>
         Thank you{" "}
         <span

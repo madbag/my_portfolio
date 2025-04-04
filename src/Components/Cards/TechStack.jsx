@@ -15,7 +15,7 @@ import WordpressIcon from "../../../assets/WordPress.svg";
 
 export default function TechStack() {
   return (
-    <div className="bg-[var(--secondary-text-color)] text-[var(--primary-text-color)] rounded-[20px] flex flex-col gap-6 h-[300px] w-[300px] p-[28px] border-[var(--border-color)]">
+    <div className="bg-[var(--secondary-text-color)] text-[var(--primary-text-color)] rounded-[20px] flex flex-col gap-6 h-[300px] w-[300px] p-[26px]">
       <div>
         <h3 className="mb-[10px]">Tech Stack: </h3>
         <h4 className="text-lg font-semibold mb-[10px]">Frontend:</h4>
@@ -25,8 +25,11 @@ export default function TechStack() {
           <img src={JSIcon} alt="JavaScript" className="w-10 h-10 mr-[5px]" />
           <img src={ReactIcon} alt="React" className="w-10 h-10 mr-[5px]" />
           <img src={TsIcon} alt="TypeScript" className="w-10 h-10 mr-[6px]" />
-          <img src={BootstrapIcon} alt="Bootstrap" className="w-10 h-10 mr-[5px]" />
-          
+          <img
+            src={BootstrapIcon}
+            alt="Bootstrap"
+            className="w-10 h-10 mr-[5px]"
+          />
         </div>
       </div>
 

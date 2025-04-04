@@ -1,181 +1,67 @@
-import { useEffect, useRef } from "react";
-import { createSwapy } from "swapy";
+import { motion } from "motion/react";
 import About from "./About";
 import Pro1 from "./Pro1";
 import Pro2 from "./Pro2";
 import Pro3 from "./Pro3";
 import Pro from "./Pro";
 import Spotify from "./Spotify";
-
 import Pro5 from "./Pro5";
 import Pro6 from "./Pro6";
 import Pro7 from "./Pro7";
 import TechStack from "./TechStack";
-import "./Cards.css";
+import"./Cards.css"
 
 export default function Cards({ activeSection }) {
-  const swapy = useRef(null);
-  const container = useRef(null);
-
-  useEffect(() => {
-    if (container.current) {
-      // console.log("Initializing Swapy...");
-
-      // Clean up any previous instance
-      if (swapy.current) {
-        swapy.current.destroy();
-      }
-
-      // Create new instance
-      swapy.current = createSwapy(container.current);
-
-      if (!swapy.current) {
-        console.error("Swapy did not initialize properly!");
-      } else {
-        console.log("Swapy initialized:", swapy.current);
-
-        swapy.current.onSwap((event) => {
-          console.log("Items swapped:", event);
-        });
-      }
-    }
-
-    return () => {
-      if (swapy.current) {
-        swapy.current.destroy();
-      }
-    };
-  }, [activeSection]); // Re-initialize when section changes
-
   if (activeSection === "Projects") {
     return (
-      <div ref={container} className="cards projects-active">
-        <div data-swapy-slot="pro1-slot">
-          <div data-swapy-item="pro1-item">
-            <Pro1 />
-          </div>
-        </div>
-
-        <div data-swapy-slot="pro2-slot">
-          <div data-swapy-item="pro2-item">
-            <Pro2 />
-          </div>
-        </div>
-
-        <div data-swapy-slot="pro3-slot">
-          <div data-swapy-item="pro3-item">
-            <Pro3 />
-          </div>
-        </div>
-
-        <div data-swapy-slot="pro4-slot">
-          <div data-swapy-item="pro4-item">
-            <Pro />
-          </div>
-        </div>
-
-        <div data-swapy-slot="pro5-slot">
-          <div data-swapy-item="pro5-item">
-            <Pro5 />
-          </div>
-        </div>
-
-        <div data-swapy-slot="pro6-slot">
-          <div data-swapy-item="pro6-item">
-            <Pro6 />
-          </div>
-        </div>
-
-        <div data-swapy-slot="pro7-slot">
-          <div data-swapy-item="pro7-item">
-            <Pro7 />
-          </div>
-        </div>
-      </div>
+      <motion.div className="projects grid grid-cols-4 gap-[10px] justify-center items-center ">
+        <Pro1 />
+        <Pro2 />
+        <Pro3 />
+        <Pro />
+        <Pro5 />
+        <Pro6 />
+        <Pro7 />
+      </motion.div>
     );
   } else if (activeSection === "About") {
     return (
-      <div ref={container} className="cards about-active">
-        <div data-swapy-slot="about-slot">
-          <div data-swapy-item="about-item">
-            <About />
-          </div>
+      <motion.div className="about flex flex-row gap-[10px]">
+        <About />
+        <div className="about-inner flex flex-row gap-[10px]">
+          <TechStack />
+          <Spotify />
         </div>
-
-        <div data-swapy-slot="spotify-slot">
-          <div data-swapy-item="spotify-item">
-            <Spotify />
-          </div>
-        </div>
-
-        <div data-swapy-slot="tech-stack-slot">
-          <div data-swapy-item="tech-stack-item">
-            <TechStack />
-          </div>
-        </div>
-      </div>
+      </motion.div>
     );
   } else {
-    // Default view
     return (
-      <div ref={container} className="cards">
-        <div data-swapy-slot="about-slot">
-          <div data-swapy-item="about-item">
-            <About />
-          </div>
-        </div>
-        <div data-swapy-slot="tech-stack-slot">
-          <div data-swapy-item="tech-stack-item">
-            <TechStack />
-          </div>
+// Default view
+      <div className="main grid grid-cols-2 gap-[10px] place-items-center max-w-[1300px]">
+        <div className="w-full h-60 flex items-center justify-center">
+          <About />
         </div>
 
-        <div data-swapy-slot="pro1-slot">
-          <div data-swapy-item="pro1-item">
-            <Pro1 />
-          </div>
+        <div className="second-grid w-full h-60 gap-[10px] flex items-center justify-center ">
+          <TechStack />
+          <Pro1 />
         </div>
 
-        <div data-swapy-slot="pro2-slot">
-          <div data-swapy-item="pro2-item">
+        <div className="w-full h-60 gap-[10px] flex items-center justify-center">
+          <div className="third-grid grid grid-cols-2 gap-[15px]">
             <Pro2 />
-          </div>
-        </div>
-
-        <div data-swapy-slot="pro3-slot">
-          <div data-swapy-item="pro3-item">
             <Pro3 />
-          </div>
-        </div>
-
-        <div data-swapy-slot="pro4-slot">
-          <div data-swapy-item="pro4-item">
             <Pro />
-          </div>
-        </div>
-
-        <div data-swapy-slot="spotify-slot">
-          <div data-swapy-item="spotify-item">
-            <Spotify />
-          </div>
-        </div>
-
-        <div data-swapy-slot="pro5-slot">
-          <div data-swapy-item="pro5-item">
             <Pro5 />
           </div>
         </div>
 
-        <div data-swapy-slot="pro6-slot">
-          <div data-swapy-item="pro6-item">
+        <div className="fourth-grid w-full h-60 flex gap-[10px] items-center justify-center">
+          <div className="flex flex-col gap-[20px]">
             <Pro6 />
-          </div>
-        </div>
-
-        <div data-swapy-slot="pro7-slot">
-          <div data-swapy-item="pro7-item">
             <Pro7 />
           </div>
+          <Spotify />
         </div>
       </div>
     );
