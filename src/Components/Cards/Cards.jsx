@@ -9,11 +9,12 @@ import Pro5 from "./Pro5";
 import Pro6 from "./Pro6";
 import Pro7 from "./Pro7";
 import TechStack from "./TechStack";
+import"./Cards.css"
 
 export default function Cards({ activeSection }) {
   if (activeSection === "Projects") {
     return (
-      <motion.div className="projects-active grid grid-cols-4 gap-[10px] ">
+      <motion.div className="projects grid grid-cols-4 gap-[10px] justify-center items-center ">
         <Pro1 />
         <Pro2 />
         <Pro3 />
@@ -25,9 +26,9 @@ export default function Cards({ activeSection }) {
     );
   } else if (activeSection === "About") {
     return (
-      <motion.div className="about-active flex flex-row gap-[10px]">
+      <motion.div className="about flex flex-row gap-[10px]">
         <About />
-        <div className="flex flex-row gap-[10px]">
+        <div className="about-inner flex flex-row gap-[10px]">
           <TechStack />
           <Spotify />
         </div>
@@ -35,18 +36,19 @@ export default function Cards({ activeSection }) {
     );
   } else {
     return (
-      <div className="grid grid-cols-2 gap-[20px] place-items-center max-w-[1200px] sm:max-w-[300px]">
+// Default view
+      <div className="main grid grid-cols-2 gap-[10px] place-items-center max-w-[1300px]">
         <div className="w-full h-60 flex items-center justify-center">
           <About />
         </div>
 
-        <div className="w-full h-60 gap-[10px] flex items-center justify-center ">
+        <div className="second-grid w-full h-60 gap-[10px] flex items-center justify-center ">
           <TechStack />
           <Pro1 />
         </div>
 
-        <div className="w-full h-60 gap-[15px]">
-          <div className="grid grid-cols-2 sm:grid-cols-1 gap-[20px] items-center justify-center">
+        <div className="w-full h-60 gap-[10px] flex items-center justify-center">
+          <div className="third-grid grid grid-cols-2 gap-[15px]">
             <Pro2 />
             <Pro3 />
             <Pro />
@@ -54,7 +56,7 @@ export default function Cards({ activeSection }) {
           </div>
         </div>
 
-        <div className="w-full h-60 flex gap-[10px] items-stretch justify-right">
+        <div className="fourth-grid w-full h-60 flex gap-[10px] items-center justify-center">
           <div className="flex flex-col gap-[20px]">
             <Pro6 />
             <Pro7 />

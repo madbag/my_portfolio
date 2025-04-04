@@ -1,0 +1,12 @@
+@media (max-width: 600px) {
+    .about{
+        width: auto;
+        height: auto;
+    }
+
+    .about-p{
+        width: 300px;
+        font-size: 14px;
+        margin-top: 2rem;
+    }
+}

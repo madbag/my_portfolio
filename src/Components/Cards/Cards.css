@@ -1,0 +1,23 @@
+@media (max-width: 600px) {
+  .main{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .second-grid, .fourth-grid, .about {
+    flex-direction: column;
+  }
+
+  .third-grid{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .projects{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    place-items:center;
+  }
+
+  .about-inner {
+    flex-direction: column;
+    place-items:center;
+  }
+  }
