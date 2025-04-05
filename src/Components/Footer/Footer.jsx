@@ -5,14 +5,14 @@ export default function Footer() {
     <div className="footer text-[var(--primary-text-color)] mt-auto py-[50px] flex flex-col items-center justify-center">
       <p>
         Thank you{" "}
-        <span
+        <a
           href="https://nevflynn.com/"
           target="_blank"
           rel="noopener noreferrer"
-          className="no-underline hover:text-[#808080]"
+          className="no-underline text-[var(--primary-text-color)] cursor-pointer hover:text-[var(--hover-color)]"
         >
           Nev Flynn
-        </span>{" "}
+        </a>{" "}
         for the idea 🌸
       </p>
 
