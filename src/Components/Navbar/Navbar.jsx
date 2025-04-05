@@ -1,4 +1,4 @@
-import Image from "../../../assets/Madhushree.svg";
+import Image from "../../../assets/Madhushree (3).svg";
 import DarkMode from "./DarkMode";
 import "./Navbar.css"
 
@@ -9,12 +9,12 @@ export default function Navbar({ activeSection, setActiveSection }) {
         onClick={() => setActiveSection("Home")}
         className="cursor-pointer mb-4"
       >
-        <img src={Image} alt="My name" className="w-[200px]" />
+        <img src={Image} alt="My name" className="w-[250px]" />
       </div>
 
-      <div className="middle-nav text-[14px] bg-[var(--middle-nav-bar)] px-[5px] py-[5px] rounded-full flex justify-center items-center">
+      <div className="middle-nav text-[18px] bg-[var(--middle-nav-bar)] px-[5px] py-[5px] rounded-full flex justify-center items-center">
         <p
-          className={`px-[15px] py-[5px] font-medium cursor-pointer rounded-full hover:text-[var(--hover-text-color)]
+          className={`px-[15px] py-[10px] font-medium cursor-pointer rounded-full hover:text-[var(--hover-text-color)]
             ${
               activeSection === "Home"
                 ? "bg-[var(--secondary-text-color)] text-[var(--primary-text-color)] px-[5px]"

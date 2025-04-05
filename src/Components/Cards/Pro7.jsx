@@ -1,10 +1,9 @@
 import Kowa from "../../../assets/Home Office.svg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import Button from "../Button/Button";
 
 function Pro7() {
   return (
-    <div className="bg-[var(--secondary-text-color)] text-[var(--primary-text-color)] flex flex-col rounded-[20px] items-start h-[300px] w-[300px] p-[26px]">
+    <div className="bg-[var(--secondary-text-color)] text-[var(--primary-text-color)] flex flex-col rounded-[20px] items-start h-[300px] w-[300px]  p-[20px]">
       <div className="flex justify-center items-center">
         <img
           src={Kowa}
@@ -13,23 +12,13 @@ function Pro7() {
         />
       </div>
 
-      <div className="flex flex-row justify-end flex-grow p-[10px] text-left bg-white relative ">
-        <div className="mt-auto">
-          <h3 className="text-xl font-semibold">Freelance</h3>
-          <p className="text-[12px] my-[5px] mr-[5px]">
+      <div className="flex flex-col justify-end flex-grow p-[10px] text-left bg-white relative ">
+        <h3 className="text-[24px] font-semibold">Freelance</h3>
+        <p className="text-[16px] my-[5px] mr-[5px] leading-[150%] ">
           A collection of projects done for ad agencies
-          </p>
-        </div>
+        </p>
 
-        <button className="px-[10px] py-[10px] mt-auto rounded-full cursor-pointer hover:bg-[var(--hover-color)] border-none">
-          <a
-            href="https://github.com/madbag/freelance.git"
-            target="_blank"
-            className="no-underline text-[#000000]"
-          >
-            <FontAwesomeIcon icon={faGithub} size="lg" />
-          </a>
-        </button>
+        <Button href="https://github.com/madbag/Javascript_30" label="Github" />
       </div>
     </div>
   );

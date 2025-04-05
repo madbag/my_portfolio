@@ -37,18 +37,18 @@ export default function Cards({ activeSection }) {
   } else {
     return (
 // Default view
-      <div className="main grid grid-cols-2 gap-[10px] place-items-center max-w-[1300px]">
+      <div className="main grid grid-cols-2 place-items-center max-w-[1300px] gap-[20px]">
         <div className="w-full h-60 flex items-center justify-center">
           <About />
         </div>
 
-        <div className="second-grid w-full h-60 gap-[10px] flex items-center justify-center ">
+        <div className="second-grid w-full h-60 flex items-center justify-center gap-[20px] ">
           <TechStack />
           <Pro1 />
         </div>
 
-        <div className="w-full h-60 gap-[10px] flex items-center justify-center">
-          <div className="third-grid grid grid-cols-2 gap-[15px]">
+        <div className="w-full h-60 flex items-center justify-center">
+          <div className="third-grid grid grid-cols-2 gap-[20px]">
             <Pro2 />
             <Pro3 />
             <Pro />
@@ -56,7 +56,7 @@ export default function Cards({ activeSection }) {
           </div>
         </div>
 
-        <div className="fourth-grid w-full h-60 flex gap-[10px] items-center justify-center">
+        <div className="fourth-grid w-full h-60 flex items-center gap-[20px] justify-center">
           <div className="flex flex-col gap-[20px]">
             <Pro6 />
             <Pro7 />

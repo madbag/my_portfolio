@@ -1,7 +1,7 @@
 // import React from 'react'
 import { useEffect, useState } from "react";
 import { motion } from "motion/react";
-import "./DarkMode.css"
+import "./DarkMode.css";
 
 export default function DarkMode() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -19,7 +19,7 @@ export default function DarkMode() {
   }, [darkMode]);
   return (
     <motion.button
-      className="dark-mode rounded-full border bg-[var(--primary-text-color)] text-[var(--secondary-text-color)] border-gray-400 px-[15px] py-[10px] hover:text-[var(--hover-text-color)] text-[12px]"
+      className="dark-mode rounded-full border bg-[var(--primary-text-color)] text-[var(--secondary-text-color)] border-gray-400 px-[15px] py-[10px]  text-[16px]"
       onClick={() => setDarkMode(!darkMode)}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
