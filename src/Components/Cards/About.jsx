@@ -3,7 +3,7 @@ import "./About.css";
 
 export default function About() {
   return (
-    <div className="about bg-[var(--secondary-text-color)] text-[var(--primary-text-color)] rounded-[20px] p-[20px] h-[300px] max-w-[620px] flex flex-col">
+    <div className="about bg-[var(--secondary-text-color)] text-[var(--primary-text-color)] rounded-[20px] p-[20px] h-[320px] max-w-[620px] flex flex-col">
       <div className="flex flex-row mt-2.5">
         <img
           src={Memoji}

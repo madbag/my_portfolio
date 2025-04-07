@@ -1,23 +1,27 @@
 @media (max-width: 600px) {
-  .main{
+  .main {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
-  .second-grid, .fourth-grid, .about {
+  .second-grid, .about {
     flex-direction: column;
   }
 
-  .third-grid{
+  .third-grid {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
-  .projects{
+  .projects {
     grid-template-columns: repeat(1, minmax(0, 1fr));
-    place-items:center;
+    place-items: center;
   }
 
-  .about-inner {
+  .fourth-grid{
     flex-direction: column;
-    place-items:center;
+    place-items: center;
   }
+
+  .about-div{
+    place-items: center;
   }
+}

@@ -19,7 +19,7 @@ export default function DarkMode() {
   }, [darkMode]);
   return (
     <motion.button
-      className="dark-mode rounded-full border bg-[var(--primary-text-color)] text-[var(--secondary-text-color)] border-gray-400 px-[15px] py-[10px]  text-[16px]"
+      className="dark-mode rounded-full border bg-[var(--primary-text-color)] text-[var(--secondary-text-color)] border-gray-400 px-[15px] py-[10px] text-[14px]"
       onClick={() => setDarkMode(!darkMode)}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}

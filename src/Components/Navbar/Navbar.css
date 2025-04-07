@@ -2,19 +2,21 @@
   .navbar {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
     justify-items: center;
   }
 
-  .middle-nav{
-    font-size: 12px;
+  .middle-nav {
+    font-size: 14px;
     padding: 2px 2px;
   }
 
   .middle-nav p:active {
     color: var(--primary-text-color);
   }
-  
 
+  .middle-nav p {
+    padding: 8px 10px;
+  }
 }

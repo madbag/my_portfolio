@@ -15,11 +15,12 @@ import WordpressIcon from "../../../assets/WordPress.svg";
 
 export default function TechStack() {
   return (
-    <div className="bg-[var(--secondary-text-color)] text-[var(--primary-text-color)] rounded-[20px] flex flex-col gap-6 h-[300px] w-[300px] p-[20px]">
+    <div className="bg-[var(--secondary-text-color)] text-[var(--primary-text-color)] rounded-[20px] flex flex-col gap-6 h-[320px] w-[300px] p-[20px]">
       <div>
-        <h3 className="mb-[15px] text-[20px]">Tech Stack: </h3>
-        <h4 className="text-lg mb-[10px]">Frontend:</h4>
-        <div className="flex flex-wrap gap-4 mt-2 mb-[10px]">
+        <h3 className="mb-[20px] text-[20px]">Tech Stack: </h3>
+
+        <p className="text-[16px] text-[var(--hover-text-color)] mb-[10px]">Frontend:</p>
+        <div className="flex flex-wrap gap-4 mt-2 mb-[15px]">
           <img src={HTMLIcon} alt="HTML" className="w-10 h-10 mr-[5px]" />
           <img src={CSSIcon} alt="CSS" className="w-10 h-10 mr-[5px]" />
           <img src={JSIcon} alt="JavaScript" className="w-10 h-10 mr-[5px]" />
@@ -34,8 +35,8 @@ export default function TechStack() {
       </div>
 
       <div>
-        <h4 className="text-lg mb-[10px]">Backend:</h4>
-        <div className="flex flex-wrap gap-4 mt-2 mb-[10px]">
+        <p className="text-[16px] text-[var(--hover-text-color)] mb-[15px]">Backend:</p>
+        <div className="flex flex-wrap gap-4 mt-2 mb-[15px]">
           <img src={PythonIcon} alt="Python" className="w-10 h-10 mr-[5px]" />
           <img src={MongoIcon} alt="MongoDB" className="w-10 h-10 mr-[5px]" />
           <img src={NodeIcon} alt="Node.js" className="w-10 h-10 mr-[5px]" />
@@ -43,8 +44,8 @@ export default function TechStack() {
       </div>
 
       <div>
-        <h4 className="text-lg mb-[10px]">Others:</h4>
-        <div className="flex flex-wrap gap-4 mt-2 mb-[10px]">
+        <p className="text-[16px] text-[var(--hover-text-color)] mb-[10px]">Others:</p>
+        <div className="flex flex-wrap gap-4 mt-2 mb-[15px]">
           <img src={GitIcon} alt="Git" className="w-10 h-10 mr-[5px]" />
           <img src={WordpressIcon} alt="WordPress" className="w-10 h-10" />
         </div>

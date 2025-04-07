@@ -1,4 +1,4 @@
-import "./Footer.css"
+import "./Footer.css";
 
 export default function Footer() {
   return (
@@ -9,7 +9,7 @@ export default function Footer() {
           href="https://nevflynn.com/"
           target="_blank"
           rel="noopener noreferrer"
-          className="no-underline text-[var(--primary-text-color)] cursor-pointer hover:text-[var(--hover-color)]"
+          className="no-underline text-[var(--primary-text-color)] cursor-pointer hover:text-[var(--hover-text-color)]"
         >
           Nev Flynn
         </a>{" "}
@@ -21,7 +21,7 @@ export default function Footer() {
           href="https://www.linkedin.com/in/madhushreeb/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[var(--primary-text-color)] hover:text-[var(--hover-color)]"
+          className="text-[var(--primary-text-color)] hover:text-[var(--hover-text-color)]"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,7 @@ export default function Footer() {
           href="https://github.com/madbag"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[var(--primary-text-color)] hover:text-[var(--hover-color)]"
+          className="text-[var(--primary-text-color)] hover:text-[var(--hover-text-color)]"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +53,7 @@ export default function Footer() {
         </a>
         <a
           href="mailto:boylemadhushree@gmail.com"
-          className="text-[var(--primary-text-color)] hover:text-[var(--hover-color)]"
+          className="text-[var(--primary-text-color)] hover:text-[var(--hover-text-color)]"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -65,25 +65,6 @@ export default function Footer() {
           >
             <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
           </svg>
-        </a>
-
-        <a
-          href="https://medium.com/@madhushree.b"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[var(--primary-text-color)] hover:text-[var(--hover-color)]"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            x="0px"
-            y="0px"
-            width="24"
-            height="24"
-            viewBox="0 0 30 30"
-            className="fill-current "
-          >
-            <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M22.542,21h-5.931 v-0.333L18,19.445V12.47L14.589,21h-0.533l-3.806-8.597v6.087l1.74,2.177V21H7.458v-0.333l1.799-2.177v-7.242L7.658,9.249 c0,0,0-0.289,0-0.244h4.376l3.399,7.353l2.932-7.353h4.154v0.244L21,10.526v8.919l1.542,1.222V21z"></path>
-          </svg>{" "}
         </a>
       </div>
     </div>

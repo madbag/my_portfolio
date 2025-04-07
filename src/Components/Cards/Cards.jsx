@@ -1,4 +1,3 @@
-import { motion } from "motion/react";
 import About from "./About";
 import Pro1 from "./Pro1";
 import Pro2 from "./Pro2";
@@ -9,12 +8,15 @@ import Pro5 from "./Pro5";
 import Pro6 from "./Pro6";
 import Pro7 from "./Pro7";
 import TechStack from "./TechStack";
-import"./Cards.css"
+
+import "./Cards.css";
+import Medium from "./Medium";
+import { div } from "framer-motion/client";
 
 export default function Cards({ activeSection }) {
   if (activeSection === "Projects") {
     return (
-      <motion.div className="projects grid grid-cols-4 gap-[10px] justify-center items-center ">
+      <div className="projects grid grid-cols-4 gap-[20px] max-w-[1300px] justify-center items-center ">
         <Pro1 />
         <Pro2 />
         <Pro3 />
@@ -22,21 +24,24 @@ export default function Cards({ activeSection }) {
         <Pro5 />
         <Pro6 />
         <Pro7 />
-      </motion.div>
+      </div>
     );
   } else if (activeSection === "About") {
     return (
-      <motion.div className="about flex flex-row gap-[10px]">
-        <About />
-        <div className="about-inner flex flex-row gap-[10px]">
-          <TechStack />
+      <div className="about-div">
+        <div className="about flex flex-row gap-[20px] max-w-[1300px]">
+          <About />
+          <div className="flex flex-col gap-[20px]">
+            <TechStack />
+            <Medium />
+          </div>
           <Spotify />
         </div>
-      </motion.div>
+      </div>
     );
   } else {
     return (
-// Default view
+      // Default view
       <div className="main grid grid-cols-2 place-items-center max-w-[1300px] gap-[20px]">
         <div className="w-full h-60 flex items-center justify-center">
           <About />
@@ -56,12 +61,15 @@ export default function Cards({ activeSection }) {
           </div>
         </div>
 
-        <div className="fourth-grid w-full h-60 flex items-center gap-[20px] justify-center">
+        <div className="fourth-grid w-full h-60 flex items-start gap-[20px] justify-center">
           <div className="flex flex-col gap-[20px]">
             <Pro6 />
             <Pro7 />
           </div>
-          <Spotify />
+          <div className="flex flex-col gap-[15px] ">
+            <Spotify />
+            <Medium />
+          </div>
         </div>
       </div>
     );
