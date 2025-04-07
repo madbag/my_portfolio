@@ -20,11 +20,11 @@ function Pro3() {
       
       <div className="flex flex-row mt-auto gap-[10px]">
         <Button
-          href="https://github.com/madbag/fight-the-fire"
+          href="https://github.com/madbag/FullStack_Final_client"
           label="Github"
         />
         <Button
-          href="https://madbag.github.io/fight-the-fire/"
+          href="https://ventout.netlify.app/"
           label="Website"
         />
       </div>

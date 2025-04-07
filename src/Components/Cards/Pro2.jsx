@@ -18,11 +18,11 @@ export default function Pro2() {
 
       <div className="flex flex-row mt-auto gap-[10px]">
         <Button
-          href="https://github.com/madbag/fight-the-fire"
+          href="https://github.com/madbag/WeatherForecastApp"
           label="Github"
         />
         <Button
-          href="https://madbag.github.io/fight-the-fire/"
+          href="https://aiweatherforecast.netlify.app/"
           label="Website"
         />
       </div>

@@ -17,7 +17,7 @@ function Pro7() {
         </p>
       </div>
 
-      <Button href="https://github.com/madbag/Javascript_30" label="Github" />
+      <Button href="https://github.com/madbag/freelance" label="Github" />
     </div>
   );
 }

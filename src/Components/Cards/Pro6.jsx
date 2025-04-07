@@ -19,7 +19,7 @@ function Pro6() {
       </div>
 
       <div>
-        <Button href="https://github.com/madbag/Javascript_30" label="Github" />
+        <Button href="https://github.com/virgoeun/WD-PR2-BAM" label="Github" />
       </div>
     </div>
   );
