@@ -3,7 +3,7 @@ import Button from "../Button/Button";
 
 export default function Pro1() {
   return (
-    <div className="bg-[var(--secondary-text-color)] text-[var(--primary-text-color)] flex flex-col rounded-[20px] items-start h-[300px] w-[300px]   p-[20px]">
+    <div className="bg-[var(--secondary-text-color)] text-[var(--primary-text-color)] flex flex-col rounded-[20px] items-start h-[300px] w-[300px] p-[20px]">
       <div className="flex justify-center items-center">
         <img
           src={JS30}

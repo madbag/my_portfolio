@@ -2,7 +2,7 @@ import WeatherAI from "../../../assets/The Weather Channel.svg";
 import Button from "../Button/Button";
 export default function Pro2() {
   return (
-    <div className="bg-[var(--secondary-text-color)] text-[var(--primary-text-color)] flex flex-col rounded-[20px] items-start h-[300px] w-[300px]   p-[20px]">
+    <div className="bg-[var(--secondary-text-color)] text-[var(--primary-text-color)] flex flex-col rounded-[20px] items-start h-[300px] w-[300px] p-[20px]">
       <div className="flex justify-center items-center">
         <img
           src={WeatherAI}

@@ -29,7 +29,7 @@ export default function Navbar({ activeSection, setActiveSection }) {
         </p>
 
         <p
-          className={`px-[15px] py-[5px] font-medium cursor-pointer rounded-full hover:text-[var(--hover-text-color)]
+          className={`px-[15px] py-[10px] font-medium cursor-pointer rounded-full hover:text-[var(--hover-text-color)]
             ${
               activeSection === "Projects"
                 ? "bg-[var(--secondary-text-color)] text-[var(--primary-text-color)] px-[5px]"
@@ -44,7 +44,7 @@ export default function Navbar({ activeSection, setActiveSection }) {
         </p>
 
         <p
-          className={`px-[15px] py-[5px] font-medium cursor-pointer rounded-full hover:text-[var(--hover-text-color)]
+          className={`px-[15px] py-[10px] font-medium cursor-pointer rounded-full hover:text-[var(--hover-text-color)]
            
           `}
           onClick={() => {
@@ -62,7 +62,7 @@ export default function Navbar({ activeSection, setActiveSection }) {
         </p>
 
         <p
-          className={`px-[15px] py-[5px] font-medium cursor-pointer rounded-full hover:text-[var(--hover-text-color)]
+          className={`px-[15px] py-[10px] font-medium cursor-pointer rounded-full hover:text-[var(--hover-text-color)]
             ${
               activeSection === "About"
                 ? "bg-[var(--secondary-text-color)] text-[var(--primary-text-color)] px-[5px]"
