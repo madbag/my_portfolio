@@ -6,7 +6,7 @@ export default function Button({ href, label }) {
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className="no-underline "
+          className="no-underline text-[14px]"
         >
           {label}
         </span>
