@@ -10,7 +10,7 @@ export default function About() {
           alt="memoji-face"
           className="w-[100px] block mr-auto mb-[10px] text-[18px]"
         ></img>
-        <p classname="place"> 📍 Berlin 🇩🇪</p>
+        <p classname="place text-[18px]"> 📍 Berlin 🇩🇪</p>
       </div>
 
       <div className=" about-p max-w-[600px] text-left mt-auto leading-[150%] text-[18px]">

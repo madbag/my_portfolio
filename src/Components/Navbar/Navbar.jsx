@@ -14,7 +14,7 @@ export default function Navbar({ activeSection, setActiveSection }) {
 
       <div className="middle-nav text-[18px] bg-[var(--middle-nav-bar)] px-[5px] py-[5px] rounded-full flex justify-center items-center">
         <p
-          className={`px-[15px] py-[10px] font-medium cursor-pointer rounded-full hover:text-[var(--hover-text-color)]
+          className={`px-[15px] py-[10px] cursor-pointer rounded-full hover:text-[var(--hover-text-color)]
             ${
               activeSection === "Home"
                 ? "bg-[var(--secondary-text-color)] text-[var(--primary-text-color)] px-[5px]"
@@ -29,10 +29,10 @@ export default function Navbar({ activeSection, setActiveSection }) {
         </p>
 
         <p
-          className={`px-[15px] py-[10px] font-medium cursor-pointer rounded-full hover:text-[var(--hover-text-color)]
+          className={`px-[15px] py-[10px] cursor-pointer rounded-full hover:text-[var(--hover-text-color)]
             ${
               activeSection === "Projects"
-                ? "bg-[var(--secondary-text-color)] text-[var(--primary-text-color)] px-[5px]"
+                ? "bg-[var(--secondary-text-color)] text-[var(--primary-text-color)]"
                 : ""
             }
           `}
@@ -44,7 +44,7 @@ export default function Navbar({ activeSection, setActiveSection }) {
         </p>
 
         <p
-          className={`px-[15px] py-[10px] font-medium cursor-pointer rounded-full hover:text-[var(--hover-text-color)]
+          className={`px-[15px] py-[10px] cursor-pointer rounded-full hover:text-[var(--hover-text-color)]
            
           `}
           onClick={() => {
@@ -62,10 +62,10 @@ export default function Navbar({ activeSection, setActiveSection }) {
         </p>
 
         <p
-          className={`px-[15px] py-[10px] font-medium cursor-pointer rounded-full hover:text-[var(--hover-text-color)]
+          className={`px-[15px] py-[10px] cursor-pointer rounded-full hover:text-[var(--hover-text-color)]
             ${
               activeSection === "About"
-                ? "bg-[var(--secondary-text-color)] text-[var(--primary-text-color)] px-[5px]"
+                ? "bg-[var(--secondary-text-color)] text-[var(--primary-text-color)]"
                 : ""
             }
           `}
@@ -76,7 +76,7 @@ export default function Navbar({ activeSection, setActiveSection }) {
           About
         </p>
 
-        <p className="mx-[10px] px-[5px] font-medium cursor-pointer hover:text-[var(--hover-text-color)]">
+        <p className="mx-[10px] px-[5px] cursor-pointer hover:text-[var(--hover-text-color)]">
           <a
             href="mailto:boylemadhushree@gmail.com"
             className="no-underline text-[#000000] hover:text-[var(--hover-text-color)]"

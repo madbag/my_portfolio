@@ -17,7 +17,7 @@ export default function Pro1() {
           Hands-on daily projects with vanilla JavaScript
         </p>
 
-        <Button href="https://github.com/madbag/Javascript_30" label="Github" />
+        <Button href="https://github.com/madbag/Javascript_30" label="Github"/>
       </div>
     </div>
   );
