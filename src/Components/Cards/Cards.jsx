@@ -8,10 +8,8 @@ import Pro5 from "./Pro5";
 import Pro6 from "./Pro6";
 import Pro7 from "./Pro7";
 import TechStack from "./TechStack";
-
 import "./Cards.css";
 import Medium from "./Medium";
-import { div } from "framer-motion/client";
 
 export default function Cards({ activeSection }) {
   if (activeSection === "Projects") {
@@ -29,7 +27,7 @@ export default function Cards({ activeSection }) {
   } else if (activeSection === "About") {
     return (
       <div className="about-div">
-        <div className="about flex flex-row gap-[20px] max-w-[1300px]">
+        <div className="about flex flex-row gap-[20px] max-w-[1300px] align-center justify-center">
           <About />
           <div className="flex flex-col gap-[20px]">
             <TechStack />
