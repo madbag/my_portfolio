@@ -24,6 +24,19 @@ Hey! I'm Madhushree Boyle, a Full Stack Developer passionate about crafting beau
 
 Check it out here: [Madhushree's Profile](https://madhushreeboyle.netlify.app/)
 
+## 🔮 Future Improvements
+
+Here are a few features and enhancements I'm planning to add to this portfolio:
+
+- 📱 Enhance Tablet responsiveness and navigation
+- 🌗 Smooth dark/light mode toggle with animated transitions
+- 🌐 Add SEO meta tags and social media previews
+- 💬 Add a contact form with validation
+- 📄 Create detailed project pages with descriptions, tech stack, and learnings
+- 🧪 Add basic testing
+- 📝 Maintain a changelog to document updates and progress
+- 🟩 Use swapy to make drag and drop features for the cards
+
 ## 📬 Contact
 
 If you'd like to connect or collaborate:
