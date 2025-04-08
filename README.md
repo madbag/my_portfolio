@@ -4,9 +4,7 @@ Hey! I'm Madhushree Boyle, a Full Stack Developer passionate about crafting beau
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** React, Tailwind CSS, TypeScript, HTML, CSS, JavaScript
-- **Backend:** Node.js, Express, MongoDB, Python
-- **Others:** Git, GitHub, WordPress, Figma, Netlify/Vercel (for deployment)
+ React, Tailwind CSS, TypeScript, HTML, CSS, JavaScript, Framer, Git, GitHub, Figma, Netlify (for deployment)
 
 ## ✨ Features
 
@@ -31,7 +29,7 @@ Check it out here: [Madhushree's Profile](https://madhushreeboyle.netlify.app/)
 If you'd like to connect or collaborate:
 
 - LinkedIn: [Madhushree Boyle](https://www.linkedin.com/in/madhushreeb/)
-- Email: boylemadhushree@example.com
+- Email: boylemadhushree@gmail.com
 
 ---
 
