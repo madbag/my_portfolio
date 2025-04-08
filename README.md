@@ -1,50 +1,39 @@
-# React + TypeScript + Vite
+# 🌐 Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hey! I'm Madhushree Boyle, a Full Stack Developer passionate about crafting beautiful, user-focused web applications. This is the code for my personal portfolio website — built to showcase my projects, skills, and background.
 
-Currently, two official plugins are available:
+## 🛠️ Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend:** React, Tailwind CSS, TypeScript, HTML, CSS, JavaScript
+- **Backend:** Node.js, Express, MongoDB, Python
+- **Others:** Git, GitHub, WordPress, Figma, Netlify/Vercel (for deployment)
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Responsive design for all screen sizes
+- Dark/Light mode toggle
+- Interactive project cards
+- Embedded Spotify & Medium widgets
+- Clean and accessible UI
 
-- Configure the top-level `parserOptions` property like this:
+## 📸 Screenshots
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+![Laptop View](./assets/Capture.JPG)
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+![Mobile View](./assets/Capture_Mobile%20view.JPG)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 🚀 Live Demo
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Check it out here: [Madhushree's Profile](https://madhushreeboyle.netlify.app/)
+
+## 📬 Contact
+
+If you'd like to connect or collaborate:
+
+- LinkedIn: [Madhushree Boyle](https://www.linkedin.com/in/madhushreeb/)
+- Email: boylemadhushree@example.com
+
+---
+
+Thanks for stopping by! ⭐ Feel free to fork or star this repo if you found it helpful.
+
