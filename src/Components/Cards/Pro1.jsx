@@ -10,7 +10,7 @@ export default function Pro1() {
         className="w-[70px] h-[70px] object-cover mb-auto"
       />
 
-      <div className="flex flex-col justify-end relative items-start text-left bg-white mb-[35px]">
+      <div className="flex flex-col justify-end items-start text-left bg-white mt-auto">
         <h3 className="text-[24px] font-semibold">Random Quotes</h3>
         <p className="text-[16px] my-[5px] leading-[150%] text-[var(--hover-text-color)]">
           A Tailwind-based app showcasing bite-sized wisdom.

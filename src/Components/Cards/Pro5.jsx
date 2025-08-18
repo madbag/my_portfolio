@@ -14,7 +14,7 @@ function Pro5() {
       <div className="flex flex-col items-start p-[10px] relative mt-auto">
         <h3 className="text-[24px] font-semibold">Greenmind</h3>
         <p className="text-[16px] my-[5px] leading-[150%] text-[var(--hover-text-color)]">
-          Group project: An eCommerce site for plant lovers
+          Group project: An eCommerce website for plant lovers
         </p>
       </div>
 

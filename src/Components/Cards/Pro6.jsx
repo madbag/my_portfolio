@@ -1,25 +1,25 @@
-import Huggers from "../../../assets/Hugging Face.svg";
+import Cake from "../../../assets/Birthday_Cake.svg";
 import Button from "../Button/Button";
 
 function Pro6() {
   return (
     <div className="bg-[var(--secondary-text-color)] text-[var(--primary-text-color)] flex flex-col rounded-[20px] items-start h-[320px] w-[300px] p-[20px]">
       <img
-        src={Huggers}
-        alt="HuggersIcon"
+        src={Cake}
+        alt="Birthday_Cake"
         className="w-[70px] h-[70px] object-cover mb-auto"
       />
 
-      <div className="flex flex-col items-start text-left bg-white justify-end relative mb-[35px]">
-        <h3 className="text-[24px] font-semibold">Huggers</h3>
+      <div className="flex flex-col justify-end items-start text-left bg-white mt-auto">
+        <h3 className="text-[24px] font-semibold">Birthday Game</h3>
         <p className="text-[16px] my-[5px] leading-[150%] text-[var(--hover-text-color)]">
-          {" "}
-          Group project: A community platform for mental health support
+          T-Rex runner game based on a friend's birthday
         </p>
       </div>
 
-      <div>
-        <Button href="https://github.com/virgoeun/WD-PR2-BAM" label="Github" />
+      <div className="flex flex-row mt-auto gap-[10px]">
+        <Button href="https://github.com/madbag/birthday_boy" label="Github" />
+        <Button href="https://happybirthday-a.vercel.app/" label="Website" />
       </div>
     </div>
   );

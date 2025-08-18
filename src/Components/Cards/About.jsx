@@ -9,15 +9,13 @@ export default function About() {
           src={Memoji}
           alt="memoji-face"
           className="w-[100px] block mr-auto mb-[10px] text-[18px]"
-        ></img>
+        />
         <p classname="place text-[18px]"> 📍 Berlin 🇩🇪</p>
       </div>
 
       <div className=" about-p max-w-[600px] text-left mt-auto leading-[150%] text-[18px]">
         <p>
-          Hi, I'm Madhushree, a Full Stack Developer who loves building web and
-          mobile applications. I specialize in creating user-friendly designs
-          and efficient back-end systems. Check out my work and let’s connect!
+          Hi, I’m Madhushree! I used to be a teacher, and now I build web and mobile apps as a Full Stack Developer. I love turning ideas into user-friendly designs and smooth back-end systems. When I’m not coding, I’m exploring new tech and figuring out how to make apps even better. Take a look at my work, and let’s connect!
         </p>
       </div>
     </div>
