@@ -15,7 +15,11 @@ export default function About() {
 
       <div className=" about-p max-w-[600px] text-left mt-auto leading-[150%] text-[18px]">
         <p>
-          Hi, I’m Madhushree! I used to be a teacher, and now I build web and mobile apps as a Full Stack Developer. I love turning ideas into user-friendly designs and smooth back-end systems. When I’m not coding, I’m exploring new tech and figuring out how to make apps even better. Take a look at my work, and let’s connect!
+          Hi, I’m Madhushree! I used to be a teacher, and now I build web and
+          mobile apps as a Full Stack Developer. I love turning ideas into
+          user-friendly designs and smooth back-end systems. When I’m not
+          coding, I’m exploring new tech and figuring out how to make apps even
+          better. Take a look at my work, and let’s connect on <a href="https://www.linkedin.com/in/madhushreeb/" className="no-underline">LinkedIn</a>!
         </p>
       </div>
     </div>
