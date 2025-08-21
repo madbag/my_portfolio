@@ -10,7 +10,7 @@ export default function About() {
           alt="memoji-face"
           className="w-[100px] block mr-auto mb-[10px] text-[18px]"
         />
-        <p classname="place text-[18px]"> 📍 Berlin 🇩🇪</p>
+        <p className="place text-[18px]"> 📍 Berlin 🇩🇪</p>
       </div>
 
       <div className=" about-p max-w-[600px] text-left mt-auto leading-[150%] text-[18px]">
@@ -19,7 +19,7 @@ export default function About() {
           mobile apps as a Full Stack Developer. I love turning ideas into
           user-friendly designs and smooth back-end systems. When I’m not
           coding, I’m exploring new tech and figuring out how to make apps even
-          better. Take a look at my work, and let’s connect on <a href="https://www.linkedin.com/in/madhushreeb/" className="no-underline">LinkedIn</a>!
+          better. Take a look at my work, and let’s connect on <a href="https://www.linkedin.com/in/madhushreeb/" className="no-underline text-[var(--primary-text-color)] hover:text-[var(--hover-text-color)]">LinkedIn</a>!
         </p>
       </div>
     </div>
