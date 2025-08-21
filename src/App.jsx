@@ -2,12 +2,10 @@ import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
 import Cards from "./Components/Cards/Cards";
 import { useState, useEffect } from "react";
+import { getInitialSection } from "./utils/utils";
 
 export default function App() {
-  const [activeSection, setActiveSection] = useState(() => {
-    const saved = localStorage.getItem("activeSection");
-    return saved || "Home";
-  });
+  const [activeSection, setActiveSection] = useState(getInitialSection);
 
   useEffect(() => {
     localStorage.setItem("activeSection", activeSection);
