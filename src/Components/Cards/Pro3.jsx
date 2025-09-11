@@ -19,7 +19,7 @@ function Pro3() {
 
       <div className="flex flex-row mt-auto gap-[10px]">
         <Button
-          href="https://github.com/madbag/https://github.com/madbag/ubarthouse"
+          href="https://github.com/madbag/ubarthouse"
           label="Github"
         />
         <Button href="https://ubarthouse.vercel.app/" label="Website" />
