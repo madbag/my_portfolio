@@ -47,14 +47,14 @@ export default function Cards({ activeSection }) {
 
         <div className="second-grid w-full h-60 flex items-center justify-center gap-[20px] ">
           <TechStack />
-            <Pro6 />
+          <Pro3 />
         </div>
 
         <div className="w-full h-60 flex items-center justify-center">
           <div className="third-grid grid grid-cols-2 gap-[20px]">
-          <Pro1 />
+            <Pro6 />
+            <Pro1 />
             <Pro2 />
-            <Pro3 />
             <Pro />
           </div>
         </div>
