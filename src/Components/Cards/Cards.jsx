@@ -10,6 +10,7 @@ import Pro7 from "./Pro7";
 import TechStack from "./TechStack";
 import "./Cards.css";
 import Medium from "./Medium";
+import Form from "./Form";
 
 export default function Cards({ activeSection }) {
   if (activeSection === "Projects") {
@@ -65,7 +66,8 @@ export default function Cards({ activeSection }) {
             <Pro7 />
           </div>
           <div className="flex flex-col gap-[15px] ">
-            <Spotify />
+            {/* <Spotify /> */}
+            <Form/>
             <Medium />
           </div>
         </div>
