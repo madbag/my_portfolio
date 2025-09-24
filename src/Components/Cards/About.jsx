@@ -1,4 +1,6 @@
 import Memoji from "../../../assets/Memoji1.png";
+// import Footer from "../Footer/Footer";
+import FooterContact from "../Footer/FooterContact";
 import "./About.css";
 
 export default function About() {
@@ -10,7 +12,10 @@ export default function About() {
           alt="memoji-face"
           className="w-[100px] block mr-auto mb-[10px] text-[18px]"
         />
-        <p className="place text-[18px]"> 📍 Berlin 🇩🇪</p>
+        <div className="flex flex-col ml-auto text-right">
+          <p className="place text-[18px]"> 📍 Berlin, 🇩🇪</p>
+          <FooterContact />
+        </div>
       </div>
 
       <div className=" about-p max-w-[600px] text-left mt-auto leading-[150%] text-[18px]">
@@ -19,7 +24,7 @@ export default function About() {
           mobile apps as a Full Stack Developer. I love turning ideas into
           user-friendly designs and smooth back-end systems. When I’m not
           coding, I’m exploring new tech and figuring out how to make apps even
-          better. Take a look at my work, and let’s connect on <a href="https://www.linkedin.com/in/madhushreeb/" className="no-underline text-[var(--primary-text-color)] hover:text-[var(--hover-text-color)]">LinkedIn</a>!
+          better. Take a look at my work, and let’s connect.
         </p>
       </div>
     </div>
