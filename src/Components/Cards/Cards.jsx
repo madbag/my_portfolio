@@ -10,6 +10,8 @@ import Pro7 from "./Pro7";
 import TechStack from "./TechStack";
 import "./Cards.css";
 import Medium from "./Medium";
+// import Form from "./Form";
+import Calendly from "./Calendly";
 
 export default function Cards({ activeSection }) {
   if (activeSection === "Projects") {
@@ -29,11 +31,12 @@ export default function Cards({ activeSection }) {
       <div className="about-div">
         <div className="about flex flex-row gap-[20px] max-w-[1300px] align-center justify-center">
           <About />
+          <TechStack />
           <div className="flex flex-col gap-[20px]">
-            <TechStack />
+            <Calendly />
             <Medium />
           </div>
-          <Spotify />
+          {/* <Spotify /> */}
         </div>
       </div>
     );
@@ -65,7 +68,8 @@ export default function Cards({ activeSection }) {
             <Pro7 />
           </div>
           <div className="flex flex-col gap-[15px] ">
-            <Spotify />
+            {/* <Spotify /> */}
+            <Calendly />
             <Medium />
           </div>
         </div>
