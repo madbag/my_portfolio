@@ -2,17 +2,17 @@ export default function Calendly() {
   return (
     <div className="bg-[var(--secondary-text-color)] rounded-[20px] text-[var(--primary-text-color)] cursor-pointer">
       {/* <h3 className="text-[24px] font-semibold mb-auto">Let's Collaborate:</h3> */}
-      <svg
-        viewBox="0 0 652 652"
-        height="800"
-        width="1200"
-        className="fill-current w-[300px] h-[150px]"
+      <a
+        href="https://calendly.com/boylemadhushree/new-meeting"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-[var(--primary-text-color)] hover:text-[var(--hover-text-color)]"
       >
-        <a
-          href="https://calendly.com/boylemadhushree/new-meeting"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[var(--primary-text-color)] hover:text-[var(--hover-text-color)]"
+        <svg
+          viewBox="0 0 652 652"
+          height="800"
+          width="1200"
+          className="fill-current w-[300px] h-[150px]"
         >
           <path
             // class="st0"
@@ -68,8 +68,8 @@ export default function Calendly() {
 	c-2.1-0.4-4.3-0.6-6.4-0.6c-22.8,0-21.6,15.4-36.7,15.4H96c-10.3,0-17.1-7.4-17.1-16.9v-7.7c0-9.5,6.8-16.8,17.1-16.8h5.6
 	c15.1,0,13.9,15.4,36.7,15.4c2.2,0,4.3-0.2,6.4-0.6c0,0,0-0.1,0-0.1C144.3,315.4,143.7,313.2,142.8,311"
           />
-        </a>
-      </svg>
+        </svg>
+      </a>
     </div>
   );
 }
