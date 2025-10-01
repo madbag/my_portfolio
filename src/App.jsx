@@ -1,6 +1,6 @@
 import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
-import Cards from "./Components/Cards/Cards";
+import Cards from "./Components/MainCard/Cards";
 import { useState, useEffect } from "react";
 
 function getInitialSection() {

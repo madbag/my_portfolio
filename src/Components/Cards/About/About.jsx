@@ -1,6 +1,6 @@
-import Memoji from "../../../assets/Memoji1.png";
+import Memoji from "../../../../assets/Memoji1.png";
 // import Footer from "../Footer/Footer";
-import FooterContact from "../Footer/FooterContact";
+import FooterContact from "../../Footer/FooterContact";
 import "./About.css";
 
 export default function About() {
