@@ -17,6 +17,7 @@ export default function DarkMode() {
       localStorage.setItem("theme", "light");
     }
   }, [darkMode]);
+  
   return (
     <motion.button
       className="dark-mode rounded-full border bg-[var(--primary-text-color)] text-[var(--secondary-text-color)] border-gray-400 px-[15px] py-[10px] text-[14px]"
