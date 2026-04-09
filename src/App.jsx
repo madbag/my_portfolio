@@ -1,6 +1,6 @@
 import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
-import Cards from "./Components/MainCard/Cards";
+import Cards from "./Components/Cards/MainCard/Cards";
 import { useState, useEffect } from "react";
 
 function getInitialSection() {
@@ -16,19 +16,21 @@ export default function App() {
   }, [activeSection]);
 
   return (
-    <div className="w-full min-h-screen">
-      <div>
+    <div className="w-full min-h-screen flex flex-col">
+      <header>
         <Navbar
           setActiveSection={setActiveSection}
           activeSection={activeSection}
         />
-      </div>
-      <div>
+      </header>
+
+      <main className="flex-1">
         <Cards activeSection={activeSection} />
-      </div>
-      <div>
+      </main>
+
+      <footer>
         <Footer />
-      </div>
+      </footer>
     </div>
   );
 }

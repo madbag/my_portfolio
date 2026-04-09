@@ -1,6 +1,28 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@layer components {
+  .card {
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  }
+
+  [data-theme="dark"] .card {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  [data-theme="dark"] .card:hover {
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.7);
+  }
+}
 
 @layer base {
   * {
@@ -11,27 +33,183 @@
   }
 
   html {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    background-color: var(--background-color);
+    overflow-y: scroll;
+    scrollbar-gutter: stable;
+    min-height: 100%;
+
+    /* light: soft aurora through atmosphere */
+    background-color: #dde8ff;
+    background-image:
+      radial-gradient(ellipse at 10% 80%, rgba(180, 120, 255, 0.3) 0%, transparent 50%),
+      radial-gradient(ellipse at 90% 10%, rgba(100, 180, 255, 0.4) 0%, transparent 50%),
+      radial-gradient(ellipse at 50% 50%, rgba(200, 230, 255, 0.5) 0%, #dde8ff 70%);
+    background-attachment: fixed;
   }
 
   :root {
-    --background-color: #f7f2f2;
+    --background-color: #dde8ff;
     --primary-text-color: #19212c;
     --secondary-text-color: #ffffff;
     --middle-nav-bar: #0000000d;
     --hover-color: #cdb6e262;
     --hover-text-color: #808080;
   }
- 
+
   [data-theme="dark"] {
-    --background-color: #090c10;
+    --background-color: #04060d;
     --primary-text-color: #d8dae0;
     --secondary-text-color: #19212c;
-    --middle-nav-bar: 	#FFFFFF66;
+    --middle-nav-bar: #ffffff1a;
     --hover-color: #c7c4f0;
-    --hover-text-color: #ffffff;
-    }
+    --hover-text-color: #a0a8c0;
+  }
+
+  html[data-theme="dark"] {
+    background-color: #04060d;
+    background-image:
+      radial-gradient(ellipse at 15% 60%, rgba(80, 0, 120, 0.5) 0%, transparent 45%),
+      radial-gradient(ellipse at 85% 20%, rgba(0, 60, 130, 0.5) 0%, transparent 45%),
+      radial-gradient(ellipse at 50% 90%, rgba(0, 100, 100, 0.3) 0%, transparent 40%),
+      radial-gradient(ellipse at 70% 50%, rgba(120, 0, 80, 0.25) 0%, transparent 35%),
+      url("/src/assets/constellations.svg");
+    background-size: cover, cover, cover, cover, cover;
+    background-attachment: fixed;
+  }
+
+  /* bright stars — behind */
+  html[data-theme="dark"]::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    box-shadow:
+      23px 45px 0 0 rgba(255,255,255,0.4),
+      187px 312px 0 0 rgba(255,255,255,0.3),
+      456px 78px 0 0 rgba(255,255,255,0.35),
+      891px 234px 0 0 rgba(255,255,255,0.25),
+      1234px 567px 0 0 rgba(255,255,255,0.4),
+      345px 890px 0 0 rgba(255,255,255,0.3),
+      678px 123px 0 0 rgba(255,255,255,0.2),
+      1456px 345px 0 0 rgba(255,255,255,0.35),
+      789px 678px 0 0 rgba(255,255,255,0.3),
+      1123px 901px 0 0 rgba(255,255,255,0.25),
+      56px 234px 0 0 rgba(255,255,255,0.4),
+      234px 567px 0 0 rgba(255,255,255,0.2),
+      567px 345px 0 0 rgba(255,255,255,0.35),
+      901px 789px 0 0 rgba(255,255,255,0.3),
+      1345px 123px 0 0 rgba(255,255,255,0.25),
+      123px 678px 0 0 rgba(255,255,255,0.4),
+      456px 901px 0 0 rgba(255,255,255,0.2),
+      890px 456px 0 0 rgba(255,255,255,0.3),
+      1523px 123px 0 0 rgba(255,255,255,0.35),
+      167px 456px 0 0 rgba(255,255,255,0.25),
+      534px 789px 0 0 rgba(255,255,255,0.4),
+      867px 345px 0 0 rgba(255,255,255,0.2),
+      1201px 678px 0 0 rgba(255,255,255,0.3),
+      589px 912px 0 0 rgba(255,255,255,0.35),
+      145px 312px 0 0 rgba(255,255,255,0.25),
+      478px 645px 0 0 rgba(255,255,255,0.4),
+      812px 978px 0 0 rgba(255,255,255,0.2),
+      1145px 312px 0 0 rgba(255,255,255,0.3),
+      1478px 645px 0 0 rgba(255,255,255,0.35),
+      289px 978px 0 0 rgba(255,255,255,0.25),
+      623px 312px 0 0 rgba(255,255,255,0.4),
+      956px 645px 0 0 rgba(255,255,255,0.2),
+      1290px 978px 0 0 rgba(255,255,255,0.3),
+      712px 234px 0 0 rgba(255,255,255,0.35),
+      89px 890px 0 0 rgba(255,255,255,0.25),
+      423px 223px 0 0 rgba(255,255,255,0.4),
+      756px 556px 0 0 rgba(255,255,255,0.2),
+      1090px 889px 0 0 rgba(255,255,255,0.3),
+      1423px 222px 0 0 rgba(255,255,255,0.35),
+      356px 555px 0 0 rgba(255,255,255,0.25),
+      689px 888px 0 0 rgba(255,255,255,0.4),
+      1023px 221px 0 0 rgba(255,255,255,0.2),
+      1356px 554px 0 0 rgba(255,255,255,0.3),
+      823px 887px 0 0 rgba(255,255,255,0.35),
+      12px 156px 0 0 rgba(255,255,255,0.25),
+      345px 489px 0 0 rgba(255,255,255,0.4),
+      678px 822px 0 0 rgba(255,255,255,0.2),
+      1012px 155px 0 0 rgba(255,255,255,0.3),
+      1345px 488px 0 0 rgba(255,255,255,0.35),
+      212px 821px 0 0 rgba(255,255,255,0.25),
+      545px 154px 0 0 rgba(255,255,255,0.4),
+      878px 487px 0 0 rgba(255,255,255,0.2),
+      1212px 820px 0 0 rgba(255,255,255,0.3),
+      645px 153px 0 0 rgba(255,255,255,0.35),
+      167px 723px 0 0 rgba(255,255,255,0.25),
+      500px 56px 0 0 rgba(255,255,255,0.4),
+      834px 389px 0 0 rgba(255,255,255,0.2),
+      1167px 722px 0 0 rgba(255,255,255,0.3),
+      1500px 55px 0 0 rgba(255,255,255,0.35),
+      300px 388px 0 0 rgba(255,255,255,0.25),
+      634px 721px 0 0 rgba(255,255,255,0.4),
+      967px 54px 0 0 rgba(255,255,255,0.2),
+      1300px 387px 0 0 rgba(255,255,255,0.3),
+      734px 720px 0 0 rgba(255,255,255,0.35),
+      45px 600px 0 0 rgba(255,255,255,0.25),
+      378px 933px 0 0 rgba(255,255,255,0.4),
+      712px 266px 0 0 rgba(255,255,255,0.2),
+      1045px 599px 0 0 rgba(255,255,255,0.3),
+      1378px 932px 0 0 rgba(255,255,255,0.35),
+      245px 265px 0 0 rgba(255,255,255,0.25),
+      578px 598px 0 0 rgba(255,255,255,0.4),
+      912px 931px 0 0 rgba(255,255,255,0.2),
+      1245px 264px 0 0 rgba(255,255,255,0.3),
+      812px 597px 0 0 rgba(255,255,255,0.35),
+      190px 867px 0 0 rgba(255,255,255,0.25),
+      523px 200px 0 0 rgba(255,255,255,0.4),
+      856px 533px 0 0 rgba(255,255,255,0.2),
+      1190px 866px 0 0 rgba(255,255,255,0.3),
+      390px 532px 0 0 rgba(255,255,255,0.35),
+      723px 865px 0 0 rgba(255,255,255,0.25),
+      1056px 198px 0 0 rgba(255,255,255,0.4),
+      1390px 531px 0 0 rgba(255,255,255,0.2),
+      956px 864px 0 0 rgba(255,255,255,0.3);
+    width: 1px;
+    height: 1px;
+  }
+
+  /* dim stars — in front */
+  html[data-theme="dark"]::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    box-shadow:
+      100px 100px 1px 1px rgba(255,255,255,0.9),
+      400px 300px 1px 1px rgba(255,255,255,0.85),
+      700px 500px 1px 1px rgba(255,255,255,0.9),
+      1000px 700px 1px 1px rgba(255,255,255,0.8),
+      1300px 900px 1px 1px rgba(255,255,255,0.9),
+      200px 600px 1px 1px rgba(255,255,255,0.85),
+      500px 800px 1px 1px rgba(255,255,255,0.9),
+      800px 200px 1px 1px rgba(255,255,255,0.8),
+      1100px 400px 1px 1px rgba(255,255,255,0.9),
+      1400px 600px 1px 1px rgba(255,255,255,0.85),
+      350px 150px 1px 1px rgba(255,255,255,0.9),
+      650px 450px 1px 1px rgba(255,255,255,0.8),
+      950px 750px 1px 1px rgba(255,255,255,0.9),
+      1250px 150px 1px 1px rgba(255,255,255,0.85),
+      150px 450px 1px 1px rgba(255,255,255,0.9),
+      450px 750px 1px 1px rgba(255,255,255,0.8),
+      750px 50px 1px 1px rgba(255,255,255,0.9),
+      1050px 350px 1px 1px rgba(255,255,255,0.85),
+      1350px 650px 1px 1px rgba(255,255,255,0.9),
+      250px 950px 1px 1px rgba(255,255,255,0.8),
+      550px 250px 1px 1px rgba(255,255,255,0.9),
+      850px 550px 1px 1px rgba(255,255,255,0.85),
+      1150px 850px 1px 1px rgba(255,255,255,0.9),
+      50px 750px 1px 1px rgba(255,255,255,0.8),
+      600px 100px 1px 1px rgba(255,255,255,0.9),
+      900px 400px 1px 1px rgba(255,255,255,0.85),
+      1200px 700px 1px 1px rgba(255,255,255,0.9),
+      300px 900px 1px 1px rgba(255,255,255,0.8),
+      1450px 300px 1px 1px rgba(255,255,255,0.9),
+      700px 800px 1px 1px rgba(255,255,255,0.85);
+    width: 1px;
+    height: 1px;
+  }
 }
