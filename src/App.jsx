@@ -1,36 +1,13 @@
-import Footer from "./Components/Footer/Footer";
-import Navbar from "./Components/Navbar/Navbar";
+import Sidebar from "./Components/Sidebar/Sidebar";
 import Cards from "./Components/Cards/MainCard/Cards";
-import { useState, useEffect } from "react";
-
-function getInitialSection() {
-  const saved = localStorage.getItem("activeSection");
-  return saved || "Home";
-}
 
 export default function App() {
-  const [activeSection, setActiveSection] = useState(getInitialSection);
-
-  useEffect(() => {
-    localStorage.setItem("activeSection", activeSection);
-  }, [activeSection]);
-
   return (
-    <div className="w-full min-h-screen flex flex-col">
-      <header>
-        <Navbar
-          setActiveSection={setActiveSection}
-          activeSection={activeSection}
-        />
-      </header>
-
-      <main className="flex-1">
-        <Cards activeSection={activeSection} />
+    <div className="w-full min-h-screen flex flex-col lg:flex-row bg-white">
+      <Sidebar />
+      <main className="w-full lg:ml-[340px] xl:ml-[400px]">
+        <Cards />
       </main>
-
-      <footer>
-        <Footer />
-      </footer>
     </div>
   );
 }

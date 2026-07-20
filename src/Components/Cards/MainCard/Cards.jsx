@@ -1,46 +1,32 @@
-import About from "../AboutCard/About";
 import Experience from "../AboutCard/Experience";
 import TechStack from "../AboutCard/TechStack";
 import ProjectCard from "../ProjectsCard/ProjectCard";
 import projects from "../ProjectsCard/projectsData";
 
-const containerClass = "max-w-325 mx-auto px-4";
-
-function AboutRow() {
+function ProjectsGrid() {
   return (
-    <div className={`${containerClass} grid grid-cols-1 sm:grid-cols-3 gap-5 items-start`}>
-      <About />
-      <TechStack />
-      <Experience />
-    </div>
-  );
-}
-
-function ProjectsMasonry() {
-  return (
-    <div className={`${containerClass} columns-1 sm:columns-2 lg:columns-3 gap-5`}>
+    <div className="grid grid-cols-[repeat(auto-fit,240px)] gap-x-8 gap-y-10">
       {projects.map((project) => (
-        <div key={project.title} className="break-inside-avoid mb-5">
-          <ProjectCard {...project} />
-        </div>
+        <ProjectCard key={project.title} {...project} />
       ))}
     </div>
   );
 }
 
-export default function Cards({ activeSection }) {
-  if (activeSection === "Projects") {
-    return <ProjectsMasonry />;
-  }
-
-  if (activeSection === "About") {
-    return <AboutRow />;
-  }
-
+export default function Cards() {
   return (
-    <div className={`${containerClass} flex flex-col gap-5`}>
-      <AboutRow />
-      <ProjectsMasonry />
+    <div className="p-6 lg:p-10 flex flex-col gap-12">
+      {/*<Experience />*/}
+      <div>
+        <h2 className="text-sm font-medium text-black mb-4">Projects</h2>
+        <ProjectsGrid />
+      </div>
+
+      <footer className="mt-auto pt-6">
+            <p className="text-xs items-center text-black/40">
+                Madhushree Boyle &copy; {new Date().getFullYear()}
+            </p>
+      </footer>
     </div>
   );
 }

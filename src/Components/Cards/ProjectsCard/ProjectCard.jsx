@@ -11,15 +11,22 @@ export default function ProjectCard({
   website,
 }) {
   return (
-    <div className="card bg-(--secondary-text-color) text-(--primary-text-color) flex flex-col rounded-3xl items-start w-full p-5">
-      <img src={icon} alt={alt} className="w-17.5 h-17.5 object-cover" />
-      <h3 className="text-xl md:text-2xl font-semibold mt-4">{title}</h3>
-      <p className="text-base mt-1 mb-4 leading-normal text-(--hover-text-color)">
+    <div className="group w-[240px]">
+      <div className="w-[240px] h-[240px] flex items-center justify-center bg-black/[0.04] mb-3 group-hover:opacity-70 transition-opacity duration-200">
+        <img src={icon} alt={alt} className="w-16 h-16 object-contain" />
+      </div>
+      <h3 className="text-sm font-medium text-black">{title}</h3>
+      <p className="text-sm text-black/40 mt-0.5 mb-1.5 leading-snug">
         {description}
       </p>
-      <div className="flex flex-row gap-2.5">
-        <Button href={github} label="Github" />
-        {website && <Button href={website} label="Website" />}
+      <div className="flex items-center gap-1.5">
+        <Button href={github} label="Code" />
+        {website && (
+          <>
+            <span className="text-sm text-black/30">,</span>
+            <Button href={website} label="Visit" />
+          </>
+        )}
       </div>
     </div>
   );
