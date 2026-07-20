@@ -12,8 +12,8 @@ const projects = [
     alt: "Invoice Generator",
     title: "Invoice Generator",
     description: "A website to create, organise and manage invoice",
-    github: "https://github.com/madbag/freelance",
-    website: "https://madbag.github.io/fight-the-fire/",
+    github: "https://github.com/madbag/Invoice-Generator",
+    website: "https://ivgen.netlify.app/",
   },
   {
     icon: CrochetIcon,
@@ -22,14 +22,6 @@ const projects = [
     description: "A crochet website that offers handmade products.",
     github: "https://github.com/madbag/ubarthouse",
     website: "https://ubarthouse.vercel.app/",
-  },
-  {
-    icon: CakeIcon,
-    alt: "Birthday_Cake",
-    title: "Birthday Game",
-    description: "T-Rex runner game based on a friend's birthday",
-    github: "https://github.com/madbag/birthday_boy",
-    website: "https://happybirthday-a.vercel.app/",
   },
   {
     icon: WeatherIcon,
