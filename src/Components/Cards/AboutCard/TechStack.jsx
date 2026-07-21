@@ -34,11 +34,11 @@ const stack = {
 export default function TechStack() {
   return (
     <section>
-      <h2 className="text-sm font-medium text-black mb-4">Tech Stack</h2>
+      <h2 className="text-sm font-medium text-black dark:text-white mb-4">Tech Stack</h2>
       <div className="flex flex-col gap-4">
         {Object.entries(stack).map(([category, icons]) => (
           <div key={category}>
-            <p className="text-sm text-black/30 mb-2">{category}</p>
+            <p className="text-sm text-black/30 dark:text-white/40 mb-2">{category}</p>
             <div className="flex flex-wrap gap-3 items-center">
               {icons.map(({ src, alt }) => (
                 <img key={alt} src={src} alt={alt} className="w-6 h-6" />

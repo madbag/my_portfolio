@@ -18,12 +18,12 @@ export default function Cards() {
     <div className="p-6 lg:p-10 flex flex-col gap-12">
       {/*<Experience />*/}
       <div>
-        <h2 className="text-sm font-medium text-black mb-4">Projects</h2>
+        <h2 className="text-sm font-medium text-black dark:text-white mb-4">Projects</h2>
         <ProjectsGrid />
       </div>
 
-      <footer className="mt-auto pt-6">
-            <p className="text-xs items-center text-black/40">
+      <footer className="mt-auto pt-6 lg:hidden">
+            <p className="text-xs items-center text-black/40 dark:text-white/40">
                 Madhushree Boyle &copy; {new Date().getFullYear()}
             </p>
       </footer>
