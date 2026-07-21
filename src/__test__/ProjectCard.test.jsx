@@ -18,7 +18,7 @@ describe('ProjectCard Component', () => {
         expect(screen.getByAltText("My Project")).toHaveAttribute("src", "icon.svg");
     });
 
-    it("always renders a Code link with the given github href", () => {
+    it("always renders a GitHub link with the given github href", () => {
         render(
             <ProjectCard
                 icon="icon.svg"
@@ -28,13 +28,13 @@ describe('ProjectCard Component', () => {
                 github="https://github.com/madbag/my-project"
             />
         );
-        expect(screen.getByRole("link", { name: "Code" })).toHaveAttribute(
+        expect(screen.getByRole("link", { name: "My Project on GitHub" })).toHaveAttribute(
             "href",
             "https://github.com/madbag/my-project"
         );
     });
 
-    it("renders a Visit link when website is provided", () => {
+    it("links the project image to the website when website is provided", () => {
         render(
             <ProjectCard
                 icon="icon.svg"
@@ -45,13 +45,13 @@ describe('ProjectCard Component', () => {
                 website="https://my-project.vercel.app/"
             />
         );
-        expect(screen.getByRole("link", { name: "Visit" })).toHaveAttribute(
+        expect(screen.getByRole("link", { name: "Visit My Project" })).toHaveAttribute(
             "href",
             "https://my-project.vercel.app/"
         );
     });
 
-    it("does not render a Visit link when website is not provided", () => {
+    it("does not link the project image when website is not provided", () => {
         render(
             <ProjectCard
                 icon="icon.svg"
@@ -61,6 +61,6 @@ describe('ProjectCard Component', () => {
                 github="https://github.com/madbag/my-project"
             />
         );
-        expect(screen.queryByRole("link", { name: "Visit" })).not.toBeInTheDocument();
+        expect(screen.queryByRole("link", { name: "Visit My Project" })).not.toBeInTheDocument();
     });
 });
