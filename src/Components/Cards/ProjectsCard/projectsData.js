@@ -8,7 +8,7 @@ const projects = [
   {
     icon: HomeOfficeIcon,
     alt: "Invoice Generator",
-    title: "Invoice Generatortitle",
+    title: "Invoice Generator",
     description: "A website to create, organise and manage invoice",
     github: "https://github.com/madbag/Invoice-Generator",
     website: "https://ivgen.netlify.app/",
