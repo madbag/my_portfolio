@@ -18,7 +18,7 @@ export default function Cards() {
     <div className="p-6 lg:p-10 flex flex-col gap-12">
       {/*<Experience />*/}
       <div>
-        <h2 className="text-sm font-medium text-black dark:text-white mb-4">Projects</h2>
+        <h2 className="text-base lg:text-lg font-medium leading-none text-black dark:text-white mb-4">Projects</h2>
         <ProjectsGrid />
       </div>
 

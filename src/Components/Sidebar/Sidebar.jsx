@@ -1,3 +1,4 @@
+import {useState} from "react";
 import {Mail} from "lucide-react";
 import DarkModeToggle from "./DarkModeToggle";
 
@@ -18,11 +19,25 @@ function GithubIcon() {
 }
 
 export default function Sidebar() {
+    const [emailCopied, setEmailCopied] = useState(false);
+
+    const handleCopyEmail = async (e) => {
+        e.preventDefault();
+        try {
+            await navigator.clipboard.writeText("boylemadhushree@gmail.com");
+        } catch {
+            return;
+        }
+        setEmailCopied(true);
+        setTimeout(() => setEmailCopied(false), 2000);
+    };
+
     return (
-        <aside className="w-full lg:w-[340px] xl:w-[400px] bg-white dark:bg-neutral-950 p-8 flex flex-col lg:fixed lg:left-0 lg:top-0 lg:h-screen lg:overflow-y-auto transition-colors duration-200">
-            <div className="flex items-start justify-between mb-4">
+        <aside className="w-full lg:w-[340px] xl:w-[400px] shrink-0 bg-white dark:bg-neutral-950 p-8 pt-6 lg:pt-10 flex flex-col lg:sticky lg:top-0 lg:h-screen lg:self-start lg:overflow-y-auto transition-colors duration-200">
+            <div className="flex items-start justify-between mb-6 gap-3">
+                {/* Header Top*/}
                 <div>
-                    <h1 className="text-sm lg:text-base font-medium tracking-tight leading-tight text-black dark:text-white">
+                    <h1 className="text-sm lg:text-2xl font-medium tracking-tight leading-none text-black dark:text-white">
                         Madhushree Boyle
                     </h1>
                     <div className="text-sm lg:text-base text-black/30 dark:text-white/40 mt-1 mb-2">
@@ -45,59 +60,91 @@ export default function Sidebar() {
                         >
                             <GithubIcon />
                         </a>
-                        <a
-                            href="mailto:boylemadhushree@gmail.com"
-                            className="flex items-center gap-1 hover:text-black dark:hover:text-white transition-colors duration-200"
+                        <button
+                            type="button"
+                            onClick={handleCopyEmail}
+                            className="relative flex items-center gap-1 hover:text-black dark:hover:text-white transition-colors duration-200"
                         >
                             <Mail size={14} />
-                        </a>
+                            {emailCopied && (
+                                <span className="absolute left-1/2 -translate-x-1/2 -top-7 whitespace-nowrap rounded bg-black dark:bg-white text-white dark:text-black text-xs px-2 py-1 shadow">
+                                    Copied!
+                                </span>
+                            )}
+                        </button>
                     </div>
                 </div>
 
-                <div>
+                <div className="flex flex-col items-end">
                     <a
                         href="https://drive.google.com/file/d/1_QI04Sw1lz94SBOGLbzVa-1lm5NqeJcY/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm lg:text-base leading-tight text-black dark:text-white hover:opacity-50 transition-opacity duration-200"
+                        className="text-sm lg:text-base leading-none text-black dark:text-white hover:opacity-50 transition-opacity duration-200 mt-1 lg:mt-2"
                     >
                         Resume
                     </a>
-                    <p className="text-sm lg:text-base text-black/30 dark:text-white/40 mb-2">
+                    <p className="text-sm lg:text-base text-black/30 dark:text-white/40 mb-2 sm:mt-1">
                         Berlin, Germany
                     </p>
                     <DarkModeToggle />
                 </div>
             </div>
 
-            <div className="flex-1">
-                <p className="text-sm lg:text-base text-black/30 dark:text-white/40 mt-1">
+            {/*Middle*/}
+            <div className="flex-1 text-sm">
+                <div className="mt-8 flex flex-col gap-1.5 text-sm">
+                  <p className="font-medium text-black/30 dark:text-white/40 mt-1">
                     About:
-                </p>
-                <p className="text-sm lg:text-base leading-relaxed mb-5 text-black dark:text-white">
+                  </p>
+                  <p className="text-sm leading-relaxed text-black dark:text-white">
                     Full-stack developer based in Berlin who loves building web application and experimenting with new technologies, and turning
                     creative ideas into clean, user-friendly experiences.
                 </p>
+                </div>
 
-                <div className="mt-6 flex flex-col gap-1.5 text-sm lg:text-base">
-                    <p className="text-sm lg:text-base text-black/30 dark:text-white/40 mt-1">
+                <div className="mt-10 flex flex-col gap-1.5 text-sm">
+                    <p className="font-medium text-black/30 dark:text-white/40 mt-1">
                         Tech Stack:
                     </p>
-                    <p className="text-black dark:text-white">
+                    <p className="text-black text-sm dark:text-white">
                         <span className="text-black/30 dark:text-white/40">Frontend:</span> HTML, CSS,
                         JavaScript, React, TypeScript, Bootstrap
                     </p>
-                    <p className="text-black dark:text-white">
+                    <p className="text-black text-sm dark:text-white">
                         <span className="text-black/30 dark:text-white/40">Backend:</span> Python, Node.js,
                         Ruby on Rails, MongoDB, PostgreSQL, Active Admin
                     </p>
-                    <p className="text-black dark:text-white">
+                    <p className="text-black text-sm dark:text-white">
                         <span className="text-black/30 dark:text-white/40">Tools:</span> Git, GitLab,
                         WordPress
                     </p>
                 </div>
+
+                <div className="mt-10 flex flex-col gap-1.5 text-sm">
+                    <p className="font-medium leading-none text-black/30 dark:text-white/40 mt-1">
+                        Experience:
+                    </p>
+                    <p className="text-black dark:text-white">
+                        <span>• Product Engineering Intern</span>
+                        <span className="block text-xs text-black/30 dark:text-white/40"> wundertax GmbH | 04/2026 – 07/2026</span>
+                    </p>
+                    <p className="text-black dark:text-white">
+                        <span>• Full Stack Developer Intern </span>
+                        <span className="block text-xs text-black/30 dark:text-white/40">Gaddr | 10/2025 – 01/2026</span>
+                    </p>
+                    <p className="text-black dark:text-white">
+                        <span>• Mobile App Developer Intern</span>
+                        <span className="block text-xs text-black/30 dark:text-white/40"> xounds GmbH | 08/2024 – 10/2024</span>
+                    </p>
+                    <p className="text-black dark:text-white">
+                        <span>• Assistant Teacher</span>
+                        <span className="block text-xs text-black/30 dark:text-white/40">India | 03/2018 – 12/2021</span>
+                    </p>
+                </div>
             </div>
 
+            {/*Footer*/}
             <footer className="hidden lg:block mt-auto pt-6">
                 <p className="text-xs text-black/40 dark:text-white/40">
                     Madhushree Boyle &copy; {new Date().getFullYear()}
