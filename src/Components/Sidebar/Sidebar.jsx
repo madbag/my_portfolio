@@ -77,7 +77,7 @@ export default function Sidebar() {
 
                 <div className="flex flex-col items-end">
                     <a
-                        href="https://drive.google.com/file/d/1oBMde38jQ46qaRXiDVH6-O5p0lnQ_gGh/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1K_Wob42Dup0FFTiYs8qMelBBXxddIljg/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-sm lg:text-base leading-none text-black dark:text-white hover:opacity-50 transition-opacity duration-200 mt-1 lg:mt-2"
