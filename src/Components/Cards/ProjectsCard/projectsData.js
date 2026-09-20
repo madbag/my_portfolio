@@ -56,6 +56,7 @@ const projects = [
     title: "Freelance",
     description: "A collection of projects done for ad agencies",
     github: "https://github.com/madbag/freelance",
+    website: "https://github.com/madbag/freelance",
     techStack: ["WordPress", "Shopify", "Figma", "HTML"],
   },
 ];
